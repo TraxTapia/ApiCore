@@ -1,0 +1,9 @@
+C:\Users\ivan.tapia\source\repos\ApiTrax\ServiciosGenericos\bin\Debug\netcoreapp3.1\ServiciosGenericos.deps.json
+C:\Users\ivan.tapia\source\repos\ApiTrax\ServiciosGenericos\bin\Debug\netcoreapp3.1\ServiciosGenericos.dll
+C:\Users\ivan.tapia\source\repos\ApiTrax\ServiciosGenericos\bin\Debug\netcoreapp3.1\ServiciosGenericos.pdb
+C:\Users\ivan.tapia\source\repos\ApiTrax\ServiciosGenericos\obj\Debug\netcoreapp3.1\ServiciosGenericos.csproj.AssemblyReference.cache
+C:\Users\ivan.tapia\source\repos\ApiTrax\ServiciosGenericos\obj\Debug\netcoreapp3.1\ServiciosGenericos.AssemblyInfoInputs.cache
+C:\Users\ivan.tapia\source\repos\ApiTrax\ServiciosGenericos\obj\Debug\netcoreapp3.1\ServiciosGenericos.AssemblyInfo.cs
+C:\Users\ivan.tapia\source\repos\ApiTrax\ServiciosGenericos\obj\Debug\netcoreapp3.1\ServiciosGenericos.csproj.CoreCompileInputs.cache
+C:\Users\ivan.tapia\source\repos\ApiTrax\ServiciosGenericos\obj\Debug\netcoreapp3.1\ServiciosGenericos.dll
+C:\Users\ivan.tapia\source\repos\ApiTrax\ServiciosGenericos\obj\Debug\netcoreapp3.1\ServiciosGenericos.pdb
