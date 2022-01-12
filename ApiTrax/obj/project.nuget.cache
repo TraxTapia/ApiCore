@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Cqy9kUUoA+yshkJ5k7q4HLNg2WxtxAm74GbCTKYOxVKDlXimIpggJkZvoRiYu+itIwfGzf4YxgaVTseugawqqQ==",
+  "dgSpecHash": "8yakj38FjvU8vpVGukCtH4EfJkfO7yWQqSWftVWtcQNH8tsb4bPb0v2C2nvBzBApEyEyUxbbWe7KD02hexb5ow==",
   "success": true,
   "projectFilePath": "C:\\Users\\ivan.tapia\\source\\repos\\ApiTrax\\ApiTrax\\ApiTrax.csproj",
   "expectedPackageFiles": [
@@ -75,7 +75,7 @@
     "C:\\Users\\ivan.tapia\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.2.3\\swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.appcontext\\4.3.0\\system.appcontext.4.3.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.buffers\\4.3.0\\system.buffers.4.3.0.nupkg.sha512",
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.collections\\4.3.0\\system.collections.4.3.0.nupkg.sha512",
+    "C:\\Users\\ivan.tapia\\.nuget\\packages\\system.collections\\4.3.0\\system.collections.4.3.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.collections.concurrent\\4.3.0\\system.collections.concurrent.4.3.0.nupkg.sha512",
     "C:\\Users\\ivan.tapia\\.nuget\\packages\\system.collections.immutable\\1.7.1\\system.collections.immutable.1.7.1.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.collections.nongeneric\\4.3.0\\system.collections.nongeneric.4.3.0.nupkg.sha512",
