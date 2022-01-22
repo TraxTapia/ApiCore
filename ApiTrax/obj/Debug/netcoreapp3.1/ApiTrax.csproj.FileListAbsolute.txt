@@ -73,10 +73,10 @@ C:\Users\ivan.tapia\source\repos\ApiTrax\ApiTrax\obj\Debug\netcoreapp3.1\ApiTrax
 C:\Users\ivan.tapia\source\repos\ApiTrax\ApiTrax\obj\Debug\netcoreapp3.1\ApiTrax.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\ivan.tapia\source\repos\ApiTrax\ApiTrax\obj\Debug\netcoreapp3.1\ApiTrax.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\ivan.tapia\source\repos\ApiTrax\ApiTrax\obj\Debug\netcoreapp3.1\staticwebassets\ApiTrax.StaticWebAssets.Manifest.cache
-C:\Users\ivan.tapia\source\repos\ApiTrax\ApiTrax\obj\Debug\netcoreapp3.1\staticwebassets\ApiTrax.StaticWebAssets.xml
-C:\Users\ivan.tapia\source\repos\ApiTrax\ApiTrax\obj\Debug\netcoreapp3.1\scopedcss\bundle\ApiTrax.styles.css
 C:\Users\ivan.tapia\source\repos\ApiTrax\ApiTrax\obj\Debug\netcoreapp3.1\ApiTrax.RazorTargetAssemblyInfo.cache
 C:\Users\ivan.tapia\source\repos\ApiTrax\ApiTrax\obj\Debug\netcoreapp3.1\ApiTrax.csproj.CopyComplete
 C:\Users\ivan.tapia\source\repos\ApiTrax\ApiTrax\obj\Debug\netcoreapp3.1\ApiTrax.dll
 C:\Users\ivan.tapia\source\repos\ApiTrax\ApiTrax\obj\Debug\netcoreapp3.1\ApiTrax.pdb
 C:\Users\ivan.tapia\source\repos\ApiTrax\ApiTrax\obj\Debug\netcoreapp3.1\ApiTrax.genruntimeconfig.cache
+C:\Users\ivan.tapia\source\repos\ApiTrax\ApiTrax\ApiTrax.xml\netcoreapp3.1\ApiTrax.StaticWebAssets.xml
+C:\Users\ivan.tapia\source\repos\ApiTrax\ApiTrax\obj\Debug\netcoreapp3.1\ApiTrax.GeneratedMSBuildEditorConfig.editorconfig

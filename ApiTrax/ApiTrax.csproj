@@ -30,6 +30,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Core.Implement.Trax\Core.Implement.Trax.csproj" />
     <ProjectReference Include="..\Models\Models.csproj" />
   </ItemGroup>
 

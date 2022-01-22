@@ -10,7 +10,7 @@ namespace ServiciosGenericos.Respuesta
         public RespuestaSimple()
         { 
         }
-        public string result { get; set; }
+        public short result { get; set; }
         public string mensaje { get; set; }
     }
 }

@@ -2244,6 +2244,33 @@
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
       },
+      "Core.Contratos.Trax/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Models": "1.0.0",
+          "ServiciosGenericos": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Core.Contratos.Trax.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Core.Contratos.Trax.dll": {}
+        }
+      },
+      "Core.Implement.Trax/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Core.Contratos.Trax": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Core.Implement.Trax.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Core.Implement.Trax.dll": {}
+        }
+      },
       "Models/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
@@ -2257,6 +2284,16 @@
         },
         "runtime": {
           "bin/placeholder/Models.dll": {}
+        }
+      },
+      "ServiciosGenericos/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/ServiciosGenericos.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ServiciosGenericos.dll": {}
         }
       }
     }
@@ -7689,15 +7726,31 @@
         "system.xml.xmlserializer.nuspec"
       ]
     },
+    "Core.Contratos.Trax/1.0.0": {
+      "type": "project",
+      "path": "../Core.Contratos.Trax/Core.Contratos.Trax.csproj",
+      "msbuildProject": "../Core.Contratos.Trax/Core.Contratos.Trax.csproj"
+    },
+    "Core.Implement.Trax/1.0.0": {
+      "type": "project",
+      "path": "../Core.Implement.Trax/Core.Implement.Trax.csproj",
+      "msbuildProject": "../Core.Implement.Trax/Core.Implement.Trax.csproj"
+    },
     "Models/1.0.0": {
       "type": "project",
       "path": "../Models/Models.csproj",
       "msbuildProject": "../Models/Models.csproj"
+    },
+    "ServiciosGenericos/1.0.0": {
+      "type": "project",
+      "path": "../ServiciosGenericos/ServiciosGenericos.csproj",
+      "msbuildProject": "../ServiciosGenericos/ServiciosGenericos.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
       "ColoredConsole >= 1.0.0",
+      "Core.Implement.Trax >= 1.0.0",
       "Microsoft.AspNetCore.Authentication.JwtBearer >= 3.1.0",
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 3.1.4",
       "Microsoft.AspNetCore.Mvc.NewtonsoftJson >= 3.1.0",
@@ -7749,6 +7802,9 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
+            "C:\\Users\\ivan.tapia\\source\\repos\\ApiTrax\\Core.Implement.Trax\\Core.Implement.Trax.csproj": {
+              "projectPath": "C:\\Users\\ivan.tapia\\source\\repos\\ApiTrax\\Core.Implement.Trax\\Core.Implement.Trax.csproj"
+            },
             "C:\\Users\\ivan.tapia\\source\\repos\\ApiTrax\\Models\\Models.csproj": {
               "projectPath": "C:\\Users\\ivan.tapia\\source\\repos\\ApiTrax\\Models\\Models.csproj"
             }
