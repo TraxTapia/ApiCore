@@ -33,10 +33,10 @@ namespace Negocio.Trax
                 ApellidoPaterno = ApellidoPaterno,
                 ApellidoMaterno = ApellidoMaterno
             });
-            Byte[] appData = Encriptacion.Encriptar(appid, User);
-            string appidenc = Convert.ToBase64String(appData);
+            //Byte[] appData = Encriptacion.Encriptar(appid, User);
+            //string appidenc = Convert.ToBase64String(appData);
             result.result = 1;
-            result.mensaje = appidenc;
+            //result.mensaje = appidenc;
             return result;
         }
         private string GenerarToken(InfoUsuario usr)

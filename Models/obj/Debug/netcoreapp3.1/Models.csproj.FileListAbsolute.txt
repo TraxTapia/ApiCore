@@ -4,6 +4,7 @@ C:\Users\ivan.tapia\source\repos\ApiTrax\Models\bin\Debug\netcoreapp3.1\Models.r
 C:\Users\ivan.tapia\source\repos\ApiTrax\Models\bin\Debug\netcoreapp3.1\Models.dll
 C:\Users\ivan.tapia\source\repos\ApiTrax\Models\bin\Debug\netcoreapp3.1\Models.pdb
 C:\Users\ivan.tapia\source\repos\ApiTrax\Models\obj\Debug\netcoreapp3.1\Models.csproj.AssemblyReference.cache
+C:\Users\ivan.tapia\source\repos\ApiTrax\Models\obj\Debug\netcoreapp3.1\Models.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\ivan.tapia\source\repos\ApiTrax\Models\obj\Debug\netcoreapp3.1\Models.AssemblyInfoInputs.cache
 C:\Users\ivan.tapia\source\repos\ApiTrax\Models\obj\Debug\netcoreapp3.1\Models.AssemblyInfo.cs
 C:\Users\ivan.tapia\source\repos\ApiTrax\Models\obj\Debug\netcoreapp3.1\Models.csproj.CoreCompileInputs.cache

@@ -1,0 +1,41 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "9be4ebbd-c26f-48cc-8770-2fc4540aae03": {
+      "ProjectGuid": "9be4ebbd-c26f-48cc-8770-2fc4540aae03",
+      "DisplayName": "ApiTrax",
+      "ColorIndex": 0
+    },
+    "5b576286-ffcc-421d-a16c-caff96e6b723": {
+      "ProjectGuid": "5b576286-ffcc-421d-a16c-caff96e6b723",
+      "DisplayName": "Core.Implement.Trax",
+      "ColorIndex": 1
+    },
+    "87285a73-2b8b-4e68-a5ca-bf9e858b3412": {
+      "ProjectGuid": "87285a73-2b8b-4e68-a5ca-bf9e858b3412",
+      "DisplayName": "Core.Contratos.Trax",
+      "ColorIndex": 2
+    },
+    "ce152363-d330-4173-a841-49c90cd0e9ee": {
+      "ProjectGuid": "ce152363-d330-4173-a841-49c90cd0e9ee",
+      "DisplayName": "Models",
+      "ColorIndex": 3
+    },
+    "70ea1108-60ef-4236-8a4e-b90f1ea2e417": {
+      "ProjectGuid": "70ea1108-60ef-4236-8a4e-b90f1ea2e417",
+      "DisplayName": "ServiciosGenericos",
+      "ColorIndex": 4
+    },
+    "f535fead-7396-4eca-8922-ea180afe5923": {
+      "ProjectGuid": "f535fead-7396-4eca-8922-ea180afe5923",
+      "DisplayName": "Negocio.Trax",
+      "ColorIndex": 5
+    },
+    "52c0c537-241f-411e-9b7c-e3b6a3181db3": {
+      "ProjectGuid": "52c0c537-241f-411e-9b7c-e3b6a3181db3",
+      "DisplayName": "Utilidades",
+      "ColorIndex": 6
+    }
+  },
+  "NextColorIndex": 7
+}

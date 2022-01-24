@@ -1,0 +1,6 @@
+C:\Users\ivan.tapia\source\repos\ApiTrax\Utilidades\bin\Debug\Utilidades.dll
+C:\Users\ivan.tapia\source\repos\ApiTrax\Utilidades\bin\Debug\Utilidades.pdb
+C:\Users\ivan.tapia\source\repos\ApiTrax\Utilidades\obj\Debug\Utilidades.csproj.CoreCompileInputs.cache
+C:\Users\ivan.tapia\source\repos\ApiTrax\Utilidades\obj\Debug\Utilidades.dll
+C:\Users\ivan.tapia\source\repos\ApiTrax\Utilidades\obj\Debug\Utilidades.pdb
+C:\Users\ivan.tapia\source\repos\ApiTrax\Utilidades\obj\Debug\Utilidades.csproj.AssemblyReference.cache

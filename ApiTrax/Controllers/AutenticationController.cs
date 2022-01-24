@@ -26,11 +26,11 @@ namespace ApiTrax.Controllers
             implement = new ImplementServices(_appSettings);
         }
 
-        [Route("api/Token")]
-        [HttpPost]
-        public Task<RespuestaSimple> GenerateToken(User user)
-        {
-            return implement.GenerateToken(user);
-        }
+        //[Route("api/Token")]
+        //[HttpPost]
+        //public Task<RespuestaSimple> GenerateToken(User user)
+        //{
+        //    return implement.GenerateToken(user);
+        //}
     }
 }

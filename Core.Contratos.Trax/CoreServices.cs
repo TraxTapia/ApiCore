@@ -10,6 +10,7 @@ namespace Core.Contratos.Trax
 {
    public interface  CoreServices
     {
-        Task<RespuestaSimple> AgregarUsuario(ClasePeticion<User> request);
+        Task<RespuestaSimple> Info();
+        //Task<RespuestaSimple> AgregarUsuario(ClasePeticion<User> request);
     }
 }

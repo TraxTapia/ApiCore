@@ -2,6 +2,7 @@
 using Microsoft.Extensions.Options;
 using Models.Models.UsuarioTkn;
 using Models.Settings;
+using Negocio.Trax;
 using ServiciosGenericos.Respuesta;
 using System;
 using System.Collections.Generic;
@@ -35,18 +36,18 @@ namespace Core.Implement.Trax
         {
             return Task.FromResult<RespuestaSimple>(new RespuestaSimple() { result = 1, mensaje = "API MAC Desarrollo" });
         }
-        public Task<RespuestaSimple> GenerateToken(User user)
-        {
-            try
-            {
+        //public Task<RespuestaSimple> GenerateToken(User user)
+        //{
+        //    try
+        //    {
 
-                return Task.FromResult<RespuestaSimple>(new NegocioAutenticacion(appSettings).Autenticar(user.user, user.password));
-            }
-            catch (Exception ex)
-            {
-                return Task.FromResult<RespuestaSimple>(new RespuestaSimple { result = 0, mensaje = ex.Message });
+        //        return Task.FromResult<RespuestaSimple>(new NegocioAutenticacion(appSettings).Autenticar(user.user, user.password));
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        return Task.FromResult<RespuestaSimple>(new RespuestaSimple { result = 0, mensaje = ex.Message });
 
-            }
-        }
+        //    }
+        //}
     }
 }

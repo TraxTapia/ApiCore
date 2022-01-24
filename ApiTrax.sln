@@ -13,9 +13,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Negocio.Trax", "Negocio.Tra
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Core.Contratos.Trax", "Core.Contratos.Trax\Core.Contratos.Trax.csproj", "{87285A73-2B8B-4E68-A5CA-BF9E858B3412}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core.Implement.Trax", "Core.Implement.Trax\Core.Implement.Trax.csproj", "{5B576286-FFCC-421D-A16C-CAFF96E6B723}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Core.Implement.Trax", "Core.Implement.Trax\Core.Implement.Trax.csproj", "{5B576286-FFCC-421D-A16C-CAFF96E6B723}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Utilidades", "Utilidades\Utilidades.csproj", "{52C0C537-241F-411E-9B7C-E3B6A3181DB3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data.DAO.EF", "Data.DAO.EF\Data.DAO.EF.csproj", "{EB8C74FF-F0FB-411C-A908-66BF73FBCAE7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{52C0C537-241F-411E-9B7C-E3B6A3181DB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{52C0C537-241F-411E-9B7C-E3B6A3181DB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{52C0C537-241F-411E-9B7C-E3B6A3181DB3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB8C74FF-F0FB-411C-A908-66BF73FBCAE7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB8C74FF-F0FB-411C-A908-66BF73FBCAE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB8C74FF-F0FB-411C-A908-66BF73FBCAE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB8C74FF-F0FB-411C-A908-66BF73FBCAE7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

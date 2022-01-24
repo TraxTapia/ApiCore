@@ -6,6 +6,7 @@ C:\Users\ivan.tapia\source\repos\ApiTrax\Negocio.Trax\bin\Debug\netcoreapp3.1\Se
 C:\Users\ivan.tapia\source\repos\ApiTrax\Negocio.Trax\bin\Debug\netcoreapp3.1\Models.pdb
 C:\Users\ivan.tapia\source\repos\ApiTrax\Negocio.Trax\bin\Debug\netcoreapp3.1\ServiciosGenericos.pdb
 C:\Users\ivan.tapia\source\repos\ApiTrax\Negocio.Trax\obj\Debug\netcoreapp3.1\Negocio.Trax.csproj.AssemblyReference.cache
+C:\Users\ivan.tapia\source\repos\ApiTrax\Negocio.Trax\obj\Debug\netcoreapp3.1\Negocio.Trax.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\ivan.tapia\source\repos\ApiTrax\Negocio.Trax\obj\Debug\netcoreapp3.1\Negocio.Trax.AssemblyInfoInputs.cache
 C:\Users\ivan.tapia\source\repos\ApiTrax\Negocio.Trax\obj\Debug\netcoreapp3.1\Negocio.Trax.AssemblyInfo.cs
 C:\Users\ivan.tapia\source\repos\ApiTrax\Negocio.Trax\obj\Debug\netcoreapp3.1\Negocio.Trax.csproj.CoreCompileInputs.cache

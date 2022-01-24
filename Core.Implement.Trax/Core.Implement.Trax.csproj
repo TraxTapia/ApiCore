@@ -6,6 +6,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Core.Contratos.Trax\Core.Contratos.Trax.csproj" />
+    <ProjectReference Include="..\Negocio.Trax\Negocio.Trax.csproj" />
   </ItemGroup>
 
 </Project>
