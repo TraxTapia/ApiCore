@@ -58,28 +58,29 @@ namespace ApiTrax
             {
                 options.SerializerSettings.ContractResolver = new DefaultContractResolver();
             });
-            var key = "This is the demo key";
-            services.AddRouting(options => options.LowercaseUrls = true);
-            services
-                .AddAuthentication(x =>
-                {
-                    x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
-                    x.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
-                })
-                .AddJwtBearer(x =>
-                {
-                    x.RequireHttpsMetadata = false;
-                    x.SaveToken = true;
-                    x.TokenValidationParameters = new TokenValidationParameters
-                    {
-                        IssuerSigningKey = new SymmetricSecurityKey(Encoding.ASCII.GetBytes(key)),
-                        ValidateAudience = false,
-                        ValidateIssuerSigningKey = true,
-                        ValidateIssuer = false
-                    };
-                });
-            services.AddAuthorization();
+            //var key = "This is the demo key";
+            //services.AddRouting(options => options.LowercaseUrls = true);
+            //services
+            //    .AddAuthentication(x =>
+            //    {
+            //        x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+            //        x.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+            //    })
+            //    .AddJwtBearer(x =>
+            //    {
+            //        x.RequireHttpsMetadata = false;
+            //        x.SaveToken = true;
+            //        x.TokenValidationParameters = new TokenValidationParameters
+            //        {
+            //            IssuerSigningKey = new SymmetricSecurityKey(Encoding.ASCII.GetBytes(key)),
+            //            ValidateAudience = false,
+            //            ValidateIssuerSigningKey = true,
+            //            ValidateIssuer = false
+            //        };
+            //    });
+            //services.AddAuthorization();
             //services.AddSingleton<IJwtAuthenticationService>(new JwtAuthenticationService(key));
+            //LEEMOS LOS PARAMETROS DE LA CONFIGURACION DEL JSON
             services.Configure<AppSettings>(Configuration.GetSection("Keys"));
             services.AddControllers();
             //services.AddSwaggerGen(x => {
@@ -92,7 +93,25 @@ namespace ApiTrax
                 var loggingSection = Configuration.GetSection("Logging");
                 loggingBuilder.AddFile(loggingSection);
             });
+            //leemos la llave tkn
+            var tknKey = Encoding.ASCII.GetBytes(Configuration.GetValue<string>("secretKey"));
+            services.AddAuthentication(x =>
+            {
+                x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+                x.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
 
+            }).AddJwtBearer(x =>
+            {
+                x.RequireHttpsMetadata = false;
+                x.SaveToken = true;
+                x.TokenValidationParameters = new TokenValidationParameters
+                {
+                    ValidateIssuerSigningKey = true,
+                    IssuerSigningKey = new SymmetricSecurityKey(tknKey),
+                    ValidateIssuer = false,
+                    ValidateAudience = false,
+                };
+            });
             //services.AddIdentity<AplicationUser, IdentityRole>()
             //    .AddEntityFrameworkStores<ApplicationDbContext>()
             //    .addDefaultTokenProviders();
@@ -107,13 +126,11 @@ namespace ApiTrax
             {
                 app.UseDeveloperExceptionPage();
             }
-
             app.UseHttpsRedirection();
-            app.UseAuthentication();
-
             app.UseRouting();
-
+            app.UseAuthentication();
             app.UseAuthorization();
+        
 
             app.UseEndpoints(endpoints =>
             {

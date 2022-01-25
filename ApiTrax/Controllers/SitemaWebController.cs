@@ -1,7 +1,9 @@
 ﻿using Core.Implement.Trax;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
+using Models.Api;
 using Models.Models.Request;
 using Models.Settings;
 using Negocio.Trax;
@@ -13,6 +15,7 @@ namespace ApiTrax.Controllers
 {
     [Route("[controller]")]
     [ApiController]
+
     public class SitemaWebController : Controller
     {
         ImplementServices implement = null;
@@ -30,7 +33,15 @@ namespace ApiTrax.Controllers
             return implement.Info();
         }
         [HttpPost]
+        [Route("api/Tkn")]
+        public Task<RespuestaSimple> GenerarToken(ClasePeticion<RequestTknUsuario> request)
+        {
+            return implement.GenerarToken(request);
+        }
+
+        [HttpPost]
         [Route("api/AgregarUsuario")]
+        [Authorize]
         public Task<RespuestaSimple> AgregarUsuario(ClasePeticion<RequestUsuario> request)
         {
             return implement.AgregarUsuario(request);
@@ -41,5 +52,6 @@ namespace ApiTrax.Controllers
         {
             return implement.LoginUsuario(request);
         }
+
     }
 }

@@ -2,11 +2,13 @@
 using Data.DAO.EF;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
+using Models.Api;
 using Models.Enum;
 using Models.Models.Request;
 using Models.Models.SistemaWeb;
 using Models.Settings;
 using Models.SistemaWebCtxDB;
+using Negocio.Trax.ApiNegocio;
 using ServiciosGenericos.Respuesta;
 
 using System;
@@ -50,7 +52,46 @@ namespace Negocio.Trax
             appid = appSettings.Value.LogService["appId"];
             minutosLogeo = Int32.Parse(appSettings.Value.LogService["delay"]);
         }
-        #region
+
+        #region Autenticacion
+
+        public RespuestaSimple GenerarToken(RequestTknUsuario request)
+        {
+            RespuestaSimple response = new RespuestaSimple();
+            RequestTknUsuario parametrosToken = new RequestTknUsuario()
+            {
+                Usuario = request.Usuario,
+                Password = request.Password,
+            };
+            try
+            {
+
+                var tokenResponse = token(parametrosToken);
+                if (tokenResponse != null)
+                {
+                    response.result = 200;
+                    response.mensaje = tokenResponse;
+                }
+                else
+                {
+                    response.result = 500;
+                    response.mensaje = "Ocurrio un error.";
+
+                }
+
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+            return response;
+
+        }
+
+        #endregion
+
+        #region SISTEMAWEB
         public RespuestaSimple AgregarUsuario(RequestUsuario request)
         {
             RespuestaSimple response = new RespuestaSimple();
@@ -123,7 +164,7 @@ namespace Negocio.Trax
                 //};
                 if (data != null)
                 {
-                   var obj = BuildToken(request.Correo);
+                    var obj = BuildToken(request.Correo);
                     response.result = 200;
                     response.mensaje = obj.ToString();
 
@@ -148,28 +189,28 @@ namespace Negocio.Trax
             }
             return response;
         }
-            #endregion
+        #endregion
 
 
-            #region ReferenceToken
-            public static String GetHash(String text, String key)
-            {
-                // change according to your needs, an UTF8Encoding
-                // could be more suitable in certain situations
-                ASCIIEncoding encoding = new ASCIIEncoding();
+        #region ReferenceToken
+        public static String GetHash(String text, String key)
+        {
+            // change according to your needs, an UTF8Encoding
+            // could be more suitable in certain situations
+            ASCIIEncoding encoding = new ASCIIEncoding();
 
-                Byte[] textBytes = encoding.GetBytes(text);
-                Byte[] keyBytes = encoding.GetBytes(key);
+            Byte[] textBytes = encoding.GetBytes(text);
+            Byte[] keyBytes = encoding.GetBytes(key);
 
-                Byte[] hashBytes;
+            Byte[] hashBytes;
 
-                using (HMACSHA1 hash = new HMACSHA1(keyBytes))
-                    hashBytes = hash.ComputeHash(textBytes);
+            using (HMACSHA1 hash = new HMACSHA1(keyBytes))
+                hashBytes = hash.ComputeHash(textBytes);
 
-                return BitConverter.ToString(hashBytes).Replace("-", "").ToLower();
-            }
+            return BitConverter.ToString(hashBytes).Replace("-", "").ToLower();
+        }
 
-        private string BuildToken(string  correo)
+        private string BuildToken(string correo)
         {
             string Tkn = string.Empty;
             string Exiration = string.Empty;
@@ -199,6 +240,36 @@ namespace Negocio.Trax
             //};
             return Tkn;
         }
+        public string token(RequestTknUsuario request)
+        {
+            var secretKey = appSettings.Value.identitiKeyJWT["Keyjwt"];
+            var audienceToken = appSettings.Value.identitiKeyJWT["JWT_AUDIENCE_TOKEN"];
+            var issuerToken = appSettings.Value.identitiKeyJWT["JWT_ISSUER_TOKEN"];
+            var expireTime = appSettings.Value.identitiKeyJWT["JWT_EXPIRE_MINUTES"];
+
+            var securityKey = new SymmetricSecurityKey(Encoding.Default.GetBytes(secretKey));
+            var signingCredentials = new SigningCredentials(securityKey, SecurityAlgorithms.HmacSha256Signature);
+
+            // create a claimsIdentity 
+            ClaimsIdentity claimsIdentity = new ClaimsIdentity(new[] {
+                new Claim(ClaimTypes.Name, request.Usuario),
+                new Claim(ClaimTypes.Authentication, request.Password),
+                //new Claim(ClaimTypes.Role, request.Password)
+            });
+            var tokenHandler = new System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler();
+            var jwtSecurityToken = tokenHandler.CreateJwtSecurityToken(
+                audience: audienceToken,
+                issuer: issuerToken,
+                subject: claimsIdentity,
+                notBefore: DateTime.UtcNow,
+                expires: DateTime.UtcNow.AddMinutes(Convert.ToInt32(expireTime)),
+                signingCredentials: signingCredentials);
+
+            var jwtTokenString = tokenHandler.WriteToken(jwtSecurityToken);
+            return jwtTokenString;
+
+
+        }
         #endregion
     }
-    }
+}

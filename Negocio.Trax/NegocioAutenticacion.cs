@@ -75,12 +75,6 @@ namespace Negocio.Trax
         }
 
 
-        //public strin GenerateJwt(string tkn)
-        //{
-        //    return BuildToken(tkn);
-        //}
-
-
        
     }
 }

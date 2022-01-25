@@ -14,6 +14,8 @@ using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using Models.Models.Request;
 using System.Text;
+using ServiciosGenericos.Peticion;
+using Models.Api;
 
 namespace ApiTrax.Controllers
 {
@@ -33,38 +35,46 @@ namespace ApiTrax.Controllers
             implement = new ImplementServices(_appSettings);
         }
 
+        [HttpPost]
+        [Route("Api/Tkn")]
+        public Task<RespuestaSimple> GenerarToken(ClasePeticion<RequestTknUsuario> request)
+        {
+            return implement.GenerarToken(request);
+        }
+
+
         //[Route("api/Token")]
         //[HttpPost]
         //public Task<RespuestaSimple> GenerateToken(User user)
         //{
         //    return implement.GenerateToken(user);
         //}
-        private IActionResult BuildToken(RequestUsuario request)
-        {
-            var claims = new[]
-            {
-                new Claim(JwtRegisteredClaimNames.UniqueName,request.Correo),
-                new Claim(JwtRegisteredClaimNames.Jti,Guid.NewGuid().ToString())
-            };
+        //private IActionResult BuildToken(RequestUsuario request)
+        //{
+        //    var claims = new[]
+        //    {
+        //        new Claim(JwtRegisteredClaimNames.UniqueName,request.Correo),
+        //        new Claim(JwtRegisteredClaimNames.Jti,Guid.NewGuid().ToString())
+        //    };
 
-            var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(appSettings.Value.identitiKeyJWT["KeySecreta"]));
-            var credential = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
+        //    var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(appSettings.Value.identitiKeyJWT["KeySecreta"]));
+        //    var credential = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
 
-            var expiration = DateTime.UtcNow.AddHours(1);
+        //    var expiration = DateTime.UtcNow.AddHours(1);
 
-            JwtSecurityToken token = new JwtSecurityToken
-                (
-                issuer: "",
-                audience: "",
-                claims: claims,
-                expires: expiration,
-                signingCredentials: credential);
+        //    JwtSecurityToken token = new JwtSecurityToken
+        //        (
+        //        issuer: "",
+        //        audience: "",
+        //        claims: claims,
+        //        expires: expiration,
+        //        signingCredentials: credential);
 
-            return Ok(new
-            {
-                token = new JwtSecurityTokenHandler().WriteToken(token),
-                expiration = expiration,
-            });
-        }
+        //    return Ok(new
+        //    {
+        //        token = new JwtSecurityTokenHandler().WriteToken(token),
+        //        expiration = expiration,
+        //    });
+        //}
     }
 }

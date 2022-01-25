@@ -1,5 +1,6 @@
 ﻿using Core.Contratos.Trax;
 using Microsoft.Extensions.Options;
+using Models.Api;
 using Models.Models.Request;
 using Models.Models.UsuarioTkn;
 using Models.Settings;
@@ -39,6 +40,30 @@ namespace Core.Implement.Trax
             return Task.FromResult<RespuestaSimple>(new RespuestaSimple() { result = 1, mensaje = "API MAC Desarrollo" });
         }
 
+        public Task<RespuestaSimple> GenerarToken(ClasePeticion<RequestTknUsuario> request)
+        {
+
+            RespuestaSimple response = new RespuestaSimple();
+
+            response.result = ok;
+            response.mensaje = "AdminCore";
+            if (response.result == ok)
+            {
+                NegocioToken negocio = new NegocioToken(UserId, appSettings);
+                try
+                {
+                    response = negocio.GenerarToken(request.Clase);
+                }
+                catch (Exception ex)
+                {
+
+                    throw new Exception(ex.Message);
+                }
+
+            }
+            return Task.FromResult<RespuestaSimple>(response);
+
+        }
         public Task<RespuestaSimple> AgregarUsuario(ClasePeticion<RequestUsuario> request)
         {
             //RespuestaSimple response = new NegocioAutenticacion(appSettings);
@@ -88,18 +113,7 @@ namespace Core.Implement.Trax
            
 
         }
-        //public Task<RespuestaSimple> GenerateToken(User user)
-        //{
-        //    try
-        //    {
-
-        //        return Task.FromResult<RespuestaSimple>(new NegocioAutenticacion(appSettings).Autenticar(user.user, user.password));
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        return Task.FromResult<RespuestaSimple>(new RespuestaSimple { result = 0, mensaje = ex.Message });
-
-        //    }
-        //}
+      
+     
     }
 }
