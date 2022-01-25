@@ -28,7 +28,7 @@ namespace Models.SistemaWebCtxDB
         }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            //optionsBuilder.UseSqlServer(_Constring);
+            optionsBuilder.UseSqlServer(_Constring);
             //var lf = new LoggerFactory();
             //lf.AddProvider(new LoggerProvider());
             //optionsBuilder.UseLoggerFactory(lf);

@@ -1,6 +1,8 @@
-﻿using System;
+﻿using Models.Models.SistemaWeb;
+using System;
 using System.Collections.Generic;
 using System.Text;
+
 
 namespace Models.SistemaWebCtxDB
 {
@@ -26,6 +28,10 @@ namespace Models.SistemaWebCtxDB
             return new SistemaWebdbcontext(constring);
         }
 
+        public Data.DAO.EF.DAOCRUDGenerico<Usuarios> DAOUsuarios(string userId)
+        {
+            return new Data.DAO.EF.DAOCRUDGenerico<Usuarios>(userId, GetContext());
+        }
         //public 
     }
 }

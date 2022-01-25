@@ -1,9 +1,14 @@
 ﻿using Microsoft.Extensions.Options;
+using Microsoft.IdentityModel.Tokens;
 using Models.Models.InformacionUsuario;
+using Models.Models.Request;
 using Models.Settings;
 using ServiciosGenericos.Respuesta;
 using System;
 using System.Collections.Generic;
+using System.IdentityModel.Tokens.Jwt;
+using System.IO;
+using System.Security.Claims;
 using System.Text;
 
 namespace Negocio.Trax
@@ -17,9 +22,21 @@ namespace Negocio.Trax
         private string UsuarioAdmin = string.Empty;
         private string PasswordAdmin = string.Empty;
         private int minutosLogeo = 0;
+
+        public BinaryReader JwrRegisteredClaimNames { get; private set; }
+
         public NegocioAutenticacion()
         {
 
+        }
+        public NegocioAutenticacion(IOptions<AppSettings> _appSettings)
+        {
+            appSettings = _appSettings;
+            usuario = appSettings.Value.LogService["usr"];
+
+            UsuarioAdmin = appSettings.Value.GenerateToken["User"];
+            PasswordAdmin = appSettings.Value.GenerateToken["Password"];
+            minutosLogeo = Int32.Parse(appSettings.Value.LogService["delay"]);
         }
 
         public RespuestaSimple GenerateToken(int IdUsuario, string User, string Nombre, string ApellidoPaterno, string ApellidoMaterno)
@@ -57,5 +74,13 @@ namespace Negocio.Trax
             return stb.ToString();
         }
 
+
+        //public strin GenerateJwt(string tkn)
+        //{
+        //    return BuildToken(tkn);
+        //}
+
+
+       
     }
 }

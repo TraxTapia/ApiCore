@@ -1557,6 +1557,34 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
+      },
+      "Data.DAO.EF/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/Data.DAO.EF.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Data.DAO.EF.dll": {}
+        }
+      },
+      "ServiciosGenericos/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/ServiciosGenericos.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ServiciosGenericos.dll": {}
+        }
+      },
+      "Utilidades/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/Utilidades.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Utilidades.dll": {}
+        }
       }
     }
   },
@@ -5861,14 +5889,32 @@
         "system.xml.xmlserializer.4.3.0.nupkg.sha512",
         "system.xml.xmlserializer.nuspec"
       ]
+    },
+    "Data.DAO.EF/1.0.0": {
+      "type": "project",
+      "path": "../Data.DAO.EF/Data.DAO.EF.csproj",
+      "msbuildProject": "../Data.DAO.EF/Data.DAO.EF.csproj"
+    },
+    "ServiciosGenericos/1.0.0": {
+      "type": "project",
+      "path": "../ServiciosGenericos/ServiciosGenericos.csproj",
+      "msbuildProject": "../ServiciosGenericos/ServiciosGenericos.csproj"
+    },
+    "Utilidades/1.0.0": {
+      "type": "project",
+      "path": "../Utilidades/Utilidades.csproj",
+      "msbuildProject": "../Utilidades/Utilidades.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
+      "Data.DAO.EF >= 1.0.0",
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 3.1.4",
       "Microsoft.EntityFrameworkCore >= 3.1.15",
       "Microsoft.EntityFrameworkCore.SqlServer >= 3.1.15",
-      "Microsoft.EntityFrameworkCore.Tools >= 3.1.15"
+      "Microsoft.EntityFrameworkCore.Tools >= 3.1.15",
+      "ServiciosGenericos >= 1.0.0",
+      "Utilidades >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -5907,7 +5953,17 @@
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\ivan.tapia\\source\\repos\\ApiTrax\\Data.DAO.EF\\Data.DAO.EF.csproj": {
+              "projectPath": "C:\\Users\\ivan.tapia\\source\\repos\\ApiTrax\\Data.DAO.EF\\Data.DAO.EF.csproj"
+            },
+            "C:\\Users\\ivan.tapia\\source\\repos\\ApiTrax\\ServiciosGenericos\\ServiciosGenericos.csproj": {
+              "projectPath": "C:\\Users\\ivan.tapia\\source\\repos\\ApiTrax\\ServiciosGenericos\\ServiciosGenericos.csproj"
+            },
+            "C:\\Users\\ivan.tapia\\source\\repos\\ApiTrax\\Utilidades\\Utilidades.csproj": {
+              "projectPath": "C:\\Users\\ivan.tapia\\source\\repos\\ApiTrax\\Utilidades\\Utilidades.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

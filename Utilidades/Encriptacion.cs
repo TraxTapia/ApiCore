@@ -132,5 +132,16 @@ namespace Utilidades
             string[] strArray = ((IEnumerable<string>)parametros).Where<string>((Func<string, bool>)(x => x.Contains(key))).Select<string, string[]>((Func<string, string[]>)(x => x.Split('='))).FirstOrDefault<string[]>();
             return strArray?[1].Substring(0, strArray[1].Length - 1);
         }
+
+        public static string encriptarPasswordGetHas256 (string password)
+        {
+            SHA256 sha256 = SHA256.Create();
+            ASCIIEncoding encoding = new ASCIIEncoding();
+            byte[] stream = null;
+            StringBuilder sb = new StringBuilder();
+            stream = sha256.ComputeHash(encoding.GetBytes(password));
+            for (int i = 0; i < stream.Length; i++) sb.AppendFormat("{0:x2}", stream[i]);
+            return sb.ToString();
+        }
     }
 }

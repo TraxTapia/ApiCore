@@ -9,6 +9,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Data.DAO.EF\Data.DAO.EF.csproj" />
     <ProjectReference Include="..\Models\Models.csproj" />
     <ProjectReference Include="..\ServiciosGenericos\ServiciosGenericos.csproj" />
   </ItemGroup>

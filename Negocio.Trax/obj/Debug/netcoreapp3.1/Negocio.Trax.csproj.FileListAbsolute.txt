@@ -13,3 +13,8 @@ C:\Users\ivan.tapia\source\repos\ApiTrax\Negocio.Trax\obj\Debug\netcoreapp3.1\Ne
 C:\Users\ivan.tapia\source\repos\ApiTrax\Negocio.Trax\obj\Debug\netcoreapp3.1\Negocio.Trax.csproj.CopyComplete
 C:\Users\ivan.tapia\source\repos\ApiTrax\Negocio.Trax\obj\Debug\netcoreapp3.1\Negocio.Trax.dll
 C:\Users\ivan.tapia\source\repos\ApiTrax\Negocio.Trax\obj\Debug\netcoreapp3.1\Negocio.Trax.pdb
+C:\Users\ivan.tapia\source\repos\ApiTrax\Negocio.Trax\bin\Debug\netcoreapp3.1\Data.DAO.EF.dll
+C:\Users\ivan.tapia\source\repos\ApiTrax\Negocio.Trax\bin\Debug\netcoreapp3.1\Utilidades.dll
+C:\Users\ivan.tapia\source\repos\ApiTrax\Negocio.Trax\bin\Debug\netcoreapp3.1\Data.DAO.EF.pdb
+C:\Users\ivan.tapia\source\repos\ApiTrax\Negocio.Trax\bin\Debug\netcoreapp3.1\Data.DAO.EF.dll.config
+C:\Users\ivan.tapia\source\repos\ApiTrax\Negocio.Trax\bin\Debug\netcoreapp3.1\Utilidades.pdb

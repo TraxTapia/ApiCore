@@ -1,4 +1,5 @@
-﻿using Models.Models.UsuarioTkn;
+﻿using Models.Models.Request;
+using Models.Models.UsuarioTkn;
 using ServiciosGenericos.Peticion;
 using ServiciosGenericos.Respuesta;
 using System;
@@ -11,6 +12,7 @@ namespace Core.Contratos.Trax
    public interface  CoreServices
     {
         Task<RespuestaSimple> Info();
-        //Task<RespuestaSimple> AgregarUsuario(ClasePeticion<User> request);
+        Task<RespuestaSimple> AgregarUsuario(ClasePeticion<RequestUsuario> request);
+        Task<RespuestaSimple> LoginUsuario(ClasePeticion<RequestUsuario> request);
     }
 }

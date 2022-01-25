@@ -16,6 +16,7 @@ namespace Models.Settings
         public Dictionary<string, string> FiltroAfiliados { get; set; }
         public Dictionary<string, string> Generic { get; set; }
         public Dictionary<string, string> UrlServicios { get; set; }
+        public Dictionary<string, string> identitiKeyJWT { get; set; }
         //public List<LayoutExcelSettings> LayoutSiniestralidadEspecial { get; set; }
     }
 }

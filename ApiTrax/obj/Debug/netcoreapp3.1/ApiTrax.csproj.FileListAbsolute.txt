@@ -8,10 +8,7 @@ C:\Users\ivan.tapia\source\repos\ApiTrax\ApiTrax\ApiTrax.xml\netcoreapp3.1\ApiTr
 C:\Users\ivan.tapia\source\repos\ApiTrax\ApiTrax\ApiTrax.xml\netcoreapp3.1\ApiTrax.pdb
 C:\Users\ivan.tapia\source\repos\ApiTrax\ApiTrax\ApiTrax.xml\netcoreapp3.1\AutoMapper.dll
 C:\Users\ivan.tapia\source\repos\ApiTrax\ApiTrax\ApiTrax.xml\netcoreapp3.1\ColoredConsole.dll
-C:\Users\ivan.tapia\source\repos\ApiTrax\ApiTrax\ApiTrax.xml\netcoreapp3.1\IdentityModel.dll
-C:\Users\ivan.tapia\source\repos\ApiTrax\ApiTrax\ApiTrax.xml\netcoreapp3.1\IdentityServer3.AccessTokenValidation.dll
 C:\Users\ivan.tapia\source\repos\ApiTrax\ApiTrax\ApiTrax.xml\netcoreapp3.1\LiteGuard.dll
-C:\Users\ivan.tapia\source\repos\ApiTrax\ApiTrax\ApiTrax.xml\netcoreapp3.1\System.Net.Http.Formatting.dll
 C:\Users\ivan.tapia\source\repos\ApiTrax\ApiTrax\ApiTrax.xml\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Users\ivan.tapia\source\repos\ApiTrax\ApiTrax\ApiTrax.xml\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.Internal.dll
 C:\Users\ivan.tapia\source\repos\ApiTrax\ApiTrax\ApiTrax.xml\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
@@ -46,13 +43,8 @@ C:\Users\ivan.tapia\source\repos\ApiTrax\ApiTrax\ApiTrax.xml\netcoreapp3.1\Micro
 C:\Users\ivan.tapia\source\repos\ApiTrax\ApiTrax\ApiTrax.xml\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 C:\Users\ivan.tapia\source\repos\ApiTrax\ApiTrax\ApiTrax.xml\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
 C:\Users\ivan.tapia\source\repos\ApiTrax\ApiTrax\ApiTrax.xml\netcoreapp3.1\Microsoft.OpenApi.dll
-C:\Users\ivan.tapia\source\repos\ApiTrax\ApiTrax\ApiTrax.xml\netcoreapp3.1\Microsoft.Owin.dll
-C:\Users\ivan.tapia\source\repos\ApiTrax\ApiTrax\ApiTrax.xml\netcoreapp3.1\Microsoft.Owin.Security.dll
-C:\Users\ivan.tapia\source\repos\ApiTrax\ApiTrax\ApiTrax.xml\netcoreapp3.1\Microsoft.Owin.Security.Jwt.dll
-C:\Users\ivan.tapia\source\repos\ApiTrax\ApiTrax\ApiTrax.xml\netcoreapp3.1\Microsoft.Owin.Security.OAuth.dll
 C:\Users\ivan.tapia\source\repos\ApiTrax\ApiTrax\ApiTrax.xml\netcoreapp3.1\Newtonsoft.Json.dll
 C:\Users\ivan.tapia\source\repos\ApiTrax\ApiTrax\ApiTrax.xml\netcoreapp3.1\Newtonsoft.Json.Bson.dll
-C:\Users\ivan.tapia\source\repos\ApiTrax\ApiTrax\ApiTrax.xml\netcoreapp3.1\Owin.dll
 C:\Users\ivan.tapia\source\repos\ApiTrax\ApiTrax\ApiTrax.xml\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\ivan.tapia\source\repos\ApiTrax\ApiTrax\ApiTrax.xml\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\ivan.tapia\source\repos\ApiTrax\ApiTrax\ApiTrax.xml\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
@@ -96,3 +88,9 @@ C:\Users\ivan.tapia\source\repos\ApiTrax\ApiTrax\obj\Debug\netcoreapp3.1\ApiTrax
 C:\Users\ivan.tapia\source\repos\ApiTrax\ApiTrax\obj\Debug\netcoreapp3.1\ApiTrax.dll
 C:\Users\ivan.tapia\source\repos\ApiTrax\ApiTrax\obj\Debug\netcoreapp3.1\ApiTrax.pdb
 C:\Users\ivan.tapia\source\repos\ApiTrax\ApiTrax\obj\Debug\netcoreapp3.1\ApiTrax.genruntimeconfig.cache
+C:\Users\ivan.tapia\source\repos\ApiTrax\ApiTrax\ApiTrax.xml\netcoreapp3.1\Data.DAO.EF.dll
+C:\Users\ivan.tapia\source\repos\ApiTrax\ApiTrax\ApiTrax.xml\netcoreapp3.1\Utilidades.dll
+C:\Users\ivan.tapia\source\repos\ApiTrax\ApiTrax\ApiTrax.xml\netcoreapp3.1\Data.DAO.EF.pdb
+C:\Users\ivan.tapia\source\repos\ApiTrax\ApiTrax\ApiTrax.xml\netcoreapp3.1\Data.DAO.EF.dll.config
+C:\Users\ivan.tapia\source\repos\ApiTrax\ApiTrax\ApiTrax.xml\netcoreapp3.1\Utilidades.pdb
+C:\Users\ivan.tapia\source\repos\ApiTrax\ApiTrax\ApiTrax.xml\netcoreapp3.1\NReco.Logging.File.dll

@@ -11,3 +11,11 @@ C:\Users\ivan.tapia\source\repos\ApiTrax\Models\obj\Debug\netcoreapp3.1\Models.c
 C:\Users\ivan.tapia\source\repos\ApiTrax\Models\obj\Debug\netcoreapp3.1\Models.dll
 C:\Users\ivan.tapia\source\repos\ApiTrax\Models\obj\Debug\netcoreapp3.1\Models.pdb
 C:\Users\ivan.tapia\source\repos\ApiTrax\Models\obj\Debug\netcoreapp3.1\Models.genruntimeconfig.cache
+C:\Users\ivan.tapia\source\repos\ApiTrax\Models\bin\Debug\netcoreapp3.1\Data.DAO.EF.dll
+C:\Users\ivan.tapia\source\repos\ApiTrax\Models\bin\Debug\netcoreapp3.1\ServiciosGenericos.dll
+C:\Users\ivan.tapia\source\repos\ApiTrax\Models\bin\Debug\netcoreapp3.1\Utilidades.dll
+C:\Users\ivan.tapia\source\repos\ApiTrax\Models\bin\Debug\netcoreapp3.1\Data.DAO.EF.pdb
+C:\Users\ivan.tapia\source\repos\ApiTrax\Models\bin\Debug\netcoreapp3.1\Data.DAO.EF.dll.config
+C:\Users\ivan.tapia\source\repos\ApiTrax\Models\bin\Debug\netcoreapp3.1\ServiciosGenericos.pdb
+C:\Users\ivan.tapia\source\repos\ApiTrax\Models\bin\Debug\netcoreapp3.1\Utilidades.pdb
+C:\Users\ivan.tapia\source\repos\ApiTrax\Models\obj\Debug\netcoreapp3.1\Models.csproj.CopyComplete

@@ -17,3 +17,8 @@ C:\Users\ivan.tapia\source\repos\ApiTrax\Core.Implement.Trax\obj\Debug\netcoreap
 C:\Users\ivan.tapia\source\repos\ApiTrax\Core.Implement.Trax\obj\Debug\netcoreapp3.1\Core.Implement.Trax.csproj.CopyComplete
 C:\Users\ivan.tapia\source\repos\ApiTrax\Core.Implement.Trax\obj\Debug\netcoreapp3.1\Core.Implement.Trax.dll
 C:\Users\ivan.tapia\source\repos\ApiTrax\Core.Implement.Trax\obj\Debug\netcoreapp3.1\Core.Implement.Trax.pdb
+C:\Users\ivan.tapia\source\repos\ApiTrax\Core.Implement.Trax\bin\Debug\netcoreapp3.1\Data.DAO.EF.dll
+C:\Users\ivan.tapia\source\repos\ApiTrax\Core.Implement.Trax\bin\Debug\netcoreapp3.1\Utilidades.dll
+C:\Users\ivan.tapia\source\repos\ApiTrax\Core.Implement.Trax\bin\Debug\netcoreapp3.1\Data.DAO.EF.pdb
+C:\Users\ivan.tapia\source\repos\ApiTrax\Core.Implement.Trax\bin\Debug\netcoreapp3.1\Data.DAO.EF.dll.config
+C:\Users\ivan.tapia\source\repos\ApiTrax\Core.Implement.Trax\bin\Debug\netcoreapp3.1\Utilidades.pdb

@@ -1085,11 +1085,19 @@
           "Core.Contratos.Trax.dll": {}
         }
       },
+      "Data.DAO.EF/1.0.0": {
+        "runtime": {
+          "Data.DAO.EF.dll": {}
+        }
+      },
       "Models/1.0.0": {
         "dependencies": {
+          "Data.DAO.EF": "1.0.0",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "3.1.4",
           "Microsoft.EntityFrameworkCore": "3.1.15",
-          "Microsoft.EntityFrameworkCore.SqlServer": "3.1.15"
+          "Microsoft.EntityFrameworkCore.SqlServer": "3.1.15",
+          "ServiciosGenericos": "1.0.0",
+          "Utilidades": "1.0.0"
         },
         "runtime": {
           "Models.dll": {}
@@ -1098,6 +1106,7 @@
       "Negocio.Trax/1.0.0": {
         "dependencies": {
           "AutoMapper": "10.1.1",
+          "Data.DAO.EF": "1.0.0",
           "Models": "1.0.0",
           "ServiciosGenericos": "1.0.0"
         },
@@ -1108,6 +1117,11 @@
       "ServiciosGenericos/1.0.0": {
         "runtime": {
           "ServiciosGenericos.dll": {}
+        }
+      },
+      "Utilidades/1.0.0": {
+        "runtime": {
+          "Utilidades.dll": {}
         }
       }
     }
@@ -1851,6 +1865,11 @@
       "serviceable": false,
       "sha512": ""
     },
+    "Data.DAO.EF/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
     "Models/1.0.0": {
       "type": "project",
       "serviceable": false,
@@ -1862,6 +1881,11 @@
       "sha512": ""
     },
     "ServiciosGenericos/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Utilidades/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

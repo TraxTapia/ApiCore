@@ -14,10 +14,15 @@ using Microsoft.Extensions.Hosting;
 //using MAC.Servicios.Core.Modelos.Settings;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Serialization;
-using Microsoft.Extensions.Logging;
 //using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
+using Models.Settings;
+using Core.Contratos.Trax;
+using Core.Implement.Trax;
+using Microsoft.Extensions.Logging;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using ApiTrax.Auth;
 //using MAC.Servicios.Core.Api.Auth;
 
 namespace ApiTrax
@@ -35,7 +40,7 @@ namespace ApiTrax
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            //services.AddTransient<IMACServices, ImplementServices>();
+            services.AddScoped<CoreServices, ImplementServices>();
             services.AddSwaggerGen(options =>
             {
                 options.SwaggerDoc("ServiciosRest", new Microsoft.OpenApi.Models.OpenApiInfo()
@@ -49,7 +54,33 @@ namespace ApiTrax
             services.AddMvc(option => option.EnableEndpointRouting = false)
             .SetCompatibilityVersion(CompatibilityVersion.Version_3_0)
              .AddNewtonsoftJson(opt => opt.SerializerSettings.ReferenceLoopHandling = ReferenceLoopHandling.Ignore);
-
+            services.AddControllers().AddNewtonsoftJson(options =>
+            {
+                options.SerializerSettings.ContractResolver = new DefaultContractResolver();
+            });
+            var key = "This is the demo key";
+            services.AddRouting(options => options.LowercaseUrls = true);
+            services
+                .AddAuthentication(x =>
+                {
+                    x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+                    x.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+                })
+                .AddJwtBearer(x =>
+                {
+                    x.RequireHttpsMetadata = false;
+                    x.SaveToken = true;
+                    x.TokenValidationParameters = new TokenValidationParameters
+                    {
+                        IssuerSigningKey = new SymmetricSecurityKey(Encoding.ASCII.GetBytes(key)),
+                        ValidateAudience = false,
+                        ValidateIssuerSigningKey = true,
+                        ValidateIssuer = false
+                    };
+                });
+            services.AddAuthorization();
+            //services.AddSingleton<IJwtAuthenticationService>(new JwtAuthenticationService(key));
+            services.Configure<AppSettings>(Configuration.GetSection("Keys"));
             services.AddControllers();
             //services.AddSwaggerGen(x => {
             //    x.SwaggerDoc(name: "V1", new Microsoft.OpenApi.Models.OpenApiInfo { Title = "Test swagger", Version = "V1" });
@@ -57,6 +88,16 @@ namespace ApiTrax
             //    var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFiles);
             //    x.IncludeXmlComments(xmlPath);
             //});
+            services.AddLogging(loggingBuilder => {
+                var loggingSection = Configuration.GetSection("Logging");
+                loggingBuilder.AddFile(loggingSection);
+            });
+
+            //services.AddIdentity<AplicationUser, IdentityRole>()
+            //    .AddEntityFrameworkStores<ApplicationDbContext>()
+            //    .addDefaultTokenProviders();
+            //services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+            //    .AddJwtBearer();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -68,6 +109,7 @@ namespace ApiTrax
             }
 
             app.UseHttpsRedirection();
+            app.UseAuthentication();
 
             app.UseRouting();
 
