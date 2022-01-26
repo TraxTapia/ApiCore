@@ -151,31 +151,28 @@ namespace Negocio.Trax
                 SistemaWebDAO _DAO = new SistemaWebDAO(UserId, appSettings.Value.ConnectionStrings["cnnSistemaWeb"], "");
                 Data.DAO.EF.DAOCRUDGenerico<Usuarios> repo = _DAO.DAOUsuarios(UserId);
                 QueryParameters<Usuarios> queryParameters = new QueryParameters<Usuarios>();
-
+        
+                NegocioToken negocio = new NegocioToken(UserId, appSettings);
+                RequestTknUsuario requestUser = new RequestTknUsuario()
+                {
+                    Usuario = request.Correo,    
+                    Password = request.Contrasena
+                };
                 var passwordEncriptada = Encriptacion.encriptarPasswordGetHas256(request.Contrasena);
-
                 queryParameters.where = x => x.Correo == request.Correo && x.Contrasena == passwordEncriptada;
-
-                var data = repo.EncontrarPor(queryParameters).FirstOrDefault();
-
-                //RequestUsuario _request = new RequestUsuario()
-                //{
-                //    Correo = request.Correo,
-                //};
+                var data = repo.EncontrarPor(queryParameters).FirstOrDefault();               
                 if (data != null)
                 {
-                    var obj = BuildToken(request.Correo);
+                    //var obj = BuildToken(request.Correo);
+                    var tokenJwt = negocio.GenerarToken(requestUser);
                     response.result = 200;
-                    response.mensaje = obj.ToString();
-
-                    //response.result = 200;
-                    //response.mensaje = "Autenticacion correcta";
+                    response.mensaje = tokenJwt.mensaje.ToString();
 
                 }
                 else
                 {
                     response.result = 0;
-                    response.mensaje = "Autenticación fallida";
+                    response.mensaje = "Autenticación fallida el usuario o password son incorrectos";
 
                 }
                 repo.Dispose();
@@ -184,7 +181,7 @@ namespace Negocio.Trax
             catch (Exception ex)
             {
 
-                response.result = 200;
+                response.result = 500;
                 response.mensaje = "Ocurrio un error " + ex.Message;
             }
             return response;
