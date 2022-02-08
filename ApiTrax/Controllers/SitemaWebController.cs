@@ -41,7 +41,7 @@ namespace ApiTrax.Controllers
 
         [HttpPost]
         [Route("api/AgregarUsuario")]
-        [Authorize]
+        //[Authorize]
         public Task<RespuestaSimple> AgregarUsuario(ClasePeticion<RequestUsuario> request)
         {
             return implement.AgregarUsuario(request);

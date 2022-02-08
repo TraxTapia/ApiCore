@@ -19,6 +19,7 @@ using System.Security.Claims;
 using System.Security.Cryptography;
 using System.Text;
 using Utilidades;
+using Seguridad = Utilidades;
 
 namespace Negocio.Trax
 {
@@ -102,7 +103,6 @@ namespace Negocio.Trax
                 Data.DAO.EF.DAOCRUDGenerico<Usuarios> repo = _DAO.DAOUsuarios(UserId);
 
                 var passwordEncriptada = Encriptacion.encriptarPasswordGetHas256(request.Contrasena);
-
                 //var encriptarPassword = Encoding.UTF8.GetBytes(NegocioSistemaWeb.GetHash())
                 Usuarios addUsuario = new Usuarios()
                 {
@@ -151,16 +151,16 @@ namespace Negocio.Trax
                 SistemaWebDAO _DAO = new SistemaWebDAO(UserId, appSettings.Value.ConnectionStrings["cnnSistemaWeb"], "");
                 Data.DAO.EF.DAOCRUDGenerico<Usuarios> repo = _DAO.DAOUsuarios(UserId);
                 QueryParameters<Usuarios> queryParameters = new QueryParameters<Usuarios>();
-        
+
                 NegocioToken negocio = new NegocioToken(UserId, appSettings);
                 RequestTknUsuario requestUser = new RequestTknUsuario()
                 {
-                    Usuario = request.Correo,    
+                    Usuario = request.Correo,
                     Password = request.Contrasena
                 };
                 var passwordEncriptada = Encriptacion.encriptarPasswordGetHas256(request.Contrasena);
                 queryParameters.where = x => x.Correo == request.Correo && x.Contrasena == passwordEncriptada;
-                var data = repo.EncontrarPor(queryParameters).FirstOrDefault();               
+                var data = repo.EncontrarPor(queryParameters).FirstOrDefault();
                 if (data != null)
                 {
                     //var obj = BuildToken(request.Correo);
