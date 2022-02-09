@@ -2,8 +2,10 @@
 using Data.DAO.EF;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
+using Models;
 using Models.Api;
 using Models.Enum;
+using Models.Models.MensajeriVM;
 using Models.Models.Request;
 using Models.Models.SistemaWeb;
 using Models.Settings;
@@ -101,9 +103,11 @@ namespace Negocio.Trax
             {
                 SistemaWebDAO _DAO = new SistemaWebDAO(UserId, appSettings.Value.ConnectionStrings["cnnSistemaWeb"], "");
                 Data.DAO.EF.DAOCRUDGenerico<Usuarios> repo = _DAO.DAOUsuarios(UserId);
-
                 var passwordEncriptada = Encriptacion.encriptarPasswordGetHas256(request.Contrasena);
+                
                 //var encriptarPassword = Encoding.UTF8.GetBytes(NegocioSistemaWeb.GetHash())
+                NegocioMensajeria requestMail = new NegocioMensajeria();
+            
                 Usuarios addUsuario = new Usuarios()
                 {
                     Nombre = request.Nombre.Trim(),
@@ -128,6 +132,21 @@ namespace Negocio.Trax
                     response.mensaje = "Ya existe un usuario con el correo " + request.Correo + " ingrese otro correo";
                     return response;
                 }
+                requestMail.GetSettings(appSettings, "MACPlatillaGeneral.html");
+                string accion = "<a href='#'style='color: #F9FAE5; text-decoration: none; font-size: 16px; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; display: block; padding: 1px 8px;'>REGISTRARSE</a>";
+
+                VMMail mail = new VMMail()
+                {
+                    to = request.Correo,
+                    asunto = "NUEVO USUARIO BIENVENIDO " +String.Join(" ",request.Nombre),
+                    mensaje = "Estimado Usuario :" +string.Join(" ", request.Nombre,request.ApellidoPaterno) + ", <br> con correo: " + request.Correo + "",
+                    asuntoDetalle = "Registro al Portal de Proveedores",
+                    accion = accion,
+                    ListaArchivosB64 = new List<ArchivoBase64>()
+                };
+                Respuesta responsemail = requestMail.SendMail(mail.to, mail.asunto, mail.mensaje, new List<string>(), string.Empty, mail.asuntoDetalle, mail.accion);
+
+
                 repo.Agregar(addUsuario);
                 response.result = 200;
                 response.mensaje = "Usuario agregado exitosamente.";

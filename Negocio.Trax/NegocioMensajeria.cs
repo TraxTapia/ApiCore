@@ -34,13 +34,13 @@ namespace Negocio.Trax
         {
             usuariosec = pUsuarioSec;
             _rutaArchivos = pRutaPlantillas;
-            _correoSalida = Seguridad.Encriptacion.Desencriptar(Convert.FromBase64String(pcorreoSalida), usuariosec);
-            _alias = Seguridad.Encriptacion.Desencriptar(Convert.FromBase64String(palias), usuariosec);
+            _correoSalida = pcorreoSalida;
+            _alias = palias;
             _SecureSSL = pSecureSSL;
-            _servicioSMTP = Seguridad.Encriptacion.Desencriptar(Convert.FromBase64String(pservicioSMTP), usuariosec);
+            _servicioSMTP = pservicioSMTP;
             _puertoSMTP = ppuertoSMTP;
-            _usuario = Seguridad.Encriptacion.Desencriptar(Convert.FromBase64String(pusuario), usuariosec);
-            _password = Seguridad.Encriptacion.Desencriptar(Convert.FromBase64String(ppassword), usuariosec);
+            _usuario = pusuario;
+            _password = ppassword;
             if (!String.IsNullOrEmpty(pRutaPlantillas))
             {
                 _rutaPlantillas = pRutaPlantillas;
@@ -200,7 +200,7 @@ namespace Negocio.Trax
                 smtp.Port = _puertoSMTP;
                 smtp.EnableSsl = _SecureSSL;
                 smtp.Credentials = new System.Net.NetworkCredential(_usuario, _password);
-                System.Net.ServicePointManager.ServerCertificateValidationCallback += delegate (Object s, X509Certificate certificate, X509Chain chain, SslPolicyErrors sslPolicyErrors) { return true; };
+                //System.Net.ServicePointManager.ServerCertificateValidationCallback += delegate (Object s, X509Certificate certificate, X509Chain chain, SslPolicyErrors sslPolicyErrors) { return true; };
                 smtp.Send(mail);
                 mail.Dispose();
             }
