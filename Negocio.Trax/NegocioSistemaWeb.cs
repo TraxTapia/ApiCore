@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using Data.DAO.EF;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 using Models;
@@ -7,6 +8,7 @@ using Models.Api;
 using Models.Enum;
 using Models.Models.MensajeriVM;
 using Models.Models.Request;
+using Models.Models.Response;
 using Models.Models.SistemaWeb;
 using Models.Settings;
 using Models.SistemaWebCtxDB;
@@ -104,10 +106,10 @@ namespace Negocio.Trax
                 SistemaWebDAO _DAO = new SistemaWebDAO(UserId, appSettings.Value.ConnectionStrings["cnnSistemaWeb"], "");
                 Data.DAO.EF.DAOCRUDGenerico<Usuarios> repo = _DAO.DAOUsuarios(UserId);
                 var passwordEncriptada = Encriptacion.encriptarPasswordGetHas256(request.Contrasena);
-                
+
                 //var encriptarPassword = Encoding.UTF8.GetBytes(NegocioSistemaWeb.GetHash())
                 NegocioMensajeria requestMail = new NegocioMensajeria();
-            
+
                 Usuarios addUsuario = new Usuarios()
                 {
                     Nombre = request.Nombre.Trim(),
@@ -138,8 +140,8 @@ namespace Negocio.Trax
                 VMMail mail = new VMMail()
                 {
                     to = request.Correo,
-                    asunto = "NUEVO USUARIO BIENVENIDO " +String.Join(" ",request.Nombre),
-                    mensaje = "Estimado Usuario :" +string.Join(" ", request.Nombre,request.ApellidoPaterno) + ", <br> con correo: " + request.Correo + "",
+                    asunto = "NUEVO USUARIO BIENVENIDO " + String.Join(" ", request.Nombre),
+                    mensaje = "Estimado Usuario :" + string.Join(" ", request.Nombre, request.ApellidoPaterno) + ", <br> con correo: " + request.Correo + "",
                     asuntoDetalle = "Registro al Portal de Proveedores",
                     accion = accion,
                     ListaArchivosB64 = new List<ArchivoBase64>()
@@ -204,6 +206,51 @@ namespace Negocio.Trax
                 response.mensaje = "Ocurrio un error " + ex.Message;
             }
             return response;
+        }
+
+        public RespuestaData<List<ListaUsuariosResponse>> ObtenerUsuarios()
+        {
+            RespuestaData<List<ListaUsuariosResponse>> respuesta = new RespuestaData<List<ListaUsuariosResponse>>
+            {
+                Datos = new List<ListaUsuariosResponse>(),
+                Respuesta = new RespuestaSimple()
+            };
+            try
+            {
+                var _usuarios = new List<Usuarios>();
+                SistemaWebDAO _DAO = new SistemaWebDAO(UserId, appSettings.Value.ConnectionStrings["cnnSistemaWeb"], "");
+                Data.DAO.EF.DAOCRUDGenerico<Usuarios> repo = _DAO.DAOUsuarios(UserId);
+                using (var context = new SistemaWebdbcontext(_DAO.ConParams))
+                {
+                    _usuarios = context.Usuarios.Include(r => r.Rol).Where(u => u.Activo.Equals(true)).ToList();
+
+                }
+                if (!_usuarios.Any())
+                {
+                    respuesta.Respuesta.result = 200;
+                    respuesta.Respuesta.mensaje = "No se encontraron resultados";
+                    return respuesta;
+                }
+                respuesta.Datos = (from usr in _usuarios
+                                   select new ListaUsuariosResponse
+                                   {
+                                     Id = usr.Id,
+                                     NombreCompleto = string.Join(" ",usr.Nombre,usr.ApellidoPaterno,usr.ApellidoMaterno),
+                                     Correo = usr.Correo,
+                                     DescripcionRol = usr.Rol.Descripcion,
+                                     Activo = usr.Activo,  
+
+                                   }).ToList();
+                respuesta.Respuesta.result = 200;
+                respuesta.Respuesta.mensaje = "";
+
+            }
+            catch (Exception ex)
+            {
+                respuesta.Respuesta.result = 500;
+                respuesta.Respuesta.mensaje = "Ocurrio un error - " + ex.Message;
+            }
+            return respuesta;
         }
         #endregion
 

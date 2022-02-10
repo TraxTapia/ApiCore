@@ -2,6 +2,7 @@
 using Microsoft.Extensions.Options;
 using Models.Api;
 using Models.Models.Request;
+using Models.Models.Response;
 using Models.Models.UsuarioTkn;
 using Models.Settings;
 using Negocio.Trax;
@@ -110,6 +111,30 @@ namespace Core.Implement.Trax
 
             }
             return Task.FromResult<RespuestaSimple>(response);
+           
+
+        }
+        public Task<RespuestaData<List<ListaUsuariosResponse>>> ObtenerUsuarios()
+        {
+            RespuestaData<List<ListaUsuariosResponse>> respuesta = new RespuestaData<List<ListaUsuariosResponse>>
+            {
+                Datos = new List<ListaUsuariosResponse>(),
+                Respuesta = new RespuestaSimple()
+            };
+
+                NegocioSistemaWeb negocio = new NegocioSistemaWeb(UserId, appSettings);
+                try
+                {
+                respuesta = negocio.ObtenerUsuarios();
+                }
+                catch (Exception ex)
+                {
+
+                    throw new Exception(ex.Message);
+                }
+
+            
+            return Task.FromResult<RespuestaData<List<ListaUsuariosResponse>>>(respuesta);
            
 
         }

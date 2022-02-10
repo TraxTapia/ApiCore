@@ -1,4 +1,5 @@
-﻿using Models.Models.SistemaWeb;
+﻿using Microsoft.EntityFrameworkCore;
+using Models.Models.SistemaWeb;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -32,6 +33,7 @@ namespace Models.SistemaWebCtxDB
         {
             return new Data.DAO.EF.DAOCRUDGenerico<Usuarios>(userId, GetContext());
         }
+     
         //public 
     }
 }

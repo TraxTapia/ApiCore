@@ -8,12 +8,13 @@ using System.Text;
 
 namespace Models.SistemaWebCtxDB
 {
-    public class SistemaWebdbcontext:DbContext
+    public class SistemaWebdbcontext : DbContext
     {
         private String _Constring = String.Empty;
         public SistemaWebdbcontext(DbContextOptions<SistemaWebdbcontext> options, String pConstring)
             : base(options)
         {
+
             _Constring = pConstring;
         }
 
@@ -40,10 +41,33 @@ namespace Models.SistemaWebCtxDB
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
+            //CONFIGURACION PARA UTILIZAR EL INCLUDE CUANDO MANDA EL ERROR COLUMNAME INVALID
+            modelBuilder.Entity<Usuarios>()
+            .HasOne(p => p.Rol)
+            .WithMany(b => b.Usuarios)
+            .HasForeignKey(p => p.IdRol)
+            .HasPrincipalKey(b => b.IdRol);
+            //modelBuilder.Entity<Usuarios>(entity =>
+            //{
+            //    entity.HasKey(x => new { x.Id });
+            //});
+            //modelBuilder.Entity<Rol>(entity =>
+            //{
+            //    entity.HasKey(x => new { x.IdRol});
+            //});
+            //modelBuilder.Entity<Usuarios>(b =>
+            //{
+            //    b.HasMany(e => e.Nombre)
+            //    .WithOne()
+            //})
             //Personalización para el servicio
-            //modelBuilder.Entity<Especialidad>().HasKey(y => new { y.CodEspecialidad, y.CodTipoCuenta });
+            //modelBuilder.Entity<Usuarios>().HasKey(y => new { y.IdRol });
+            //modelBuilder.Entity<Rol>().HasKey(y => new {  y.IdRol });
             //modelBuilder.Entity<Entidades.Mediaccess.Ubicacion.Ubicacion>().HasKey(y => new { y.CodCuenta, y.CodUbicacion });
-          
+            //modelBuilder.HasDefaultSchema("database_schema");
+            //modelBuilder.Entity<EntityNameInModel>().ToTable("table_in_database").HasKey(ats => ats.id);
+            //modelBuilder.Entity<EntityNameInModel>().Property(ats => ats.user_name).HasColumnName("user_name");
+
 
         }
         public override int SaveChanges()

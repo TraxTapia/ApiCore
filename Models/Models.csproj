@@ -15,10 +15,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Models\Response\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\Data.DAO.EF\Data.DAO.EF.csproj" />
     <ProjectReference Include="..\ServiciosGenericos\ServiciosGenericos.csproj" />
     <ProjectReference Include="..\Utilidades\Utilidades.csproj" />

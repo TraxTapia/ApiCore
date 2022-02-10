@@ -7,8 +7,9 @@ using System.Text;
 namespace Models.Models.SistemaWeb
 {
     [Table("Usuarios")]
-    public class Usuarios
+    public partial class Usuarios
     {
+        [Key]
         public int Id { get; set; }
 
         [Required]
@@ -30,13 +31,13 @@ namespace Models.Models.SistemaWeb
         [Required]
         [StringLength(250)]
         public string Contrasena { get; set; }
-
+        [Column("IdRol")]
         public int IdRol { get; set; }
 
         public DateTime? FechaCreacion { get; set; }
 
         public bool Activo { get; set; }
 
-        //public virtual Rol Rol { get; set; }
+        public virtual Rol Rol { get; set; }
     }
 }

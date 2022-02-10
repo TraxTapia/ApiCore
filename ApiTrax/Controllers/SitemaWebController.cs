@@ -5,10 +5,12 @@ using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Models.Api;
 using Models.Models.Request;
+using Models.Models.Response;
 using Models.Settings;
 using Negocio.Trax;
 using ServiciosGenericos.Peticion;
 using ServiciosGenericos.Respuesta;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 
 namespace ApiTrax.Controllers
@@ -51,6 +53,12 @@ namespace ApiTrax.Controllers
         public Task<RespuestaSimple> LoginUsuario(ClasePeticion<RequestUsuario> request)
         {
             return implement.LoginUsuario(request);
+        }
+        [HttpGet]
+        [Route("Api/ObtenerUsuarios")]
+        public Task<RespuestaData<List<ListaUsuariosResponse>>> ObtenerListaUsuarios()
+        {
+            return implement.ObtenerUsuarios();
         }
 
     }
