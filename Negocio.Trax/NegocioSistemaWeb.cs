@@ -142,7 +142,7 @@ namespace Negocio.Trax
                     to = request.Correo,
                     asunto = "NUEVO USUARIO BIENVENIDO " + String.Join(" ", request.Nombre),
                     mensaje = "Estimado Usuario :" + string.Join(" ", request.Nombre, request.ApellidoPaterno) + ", <br> con correo: " + request.Correo + "",
-                    asuntoDetalle = "Registro al Portal de Proveedores",
+                    asuntoDetalle = "Bienvenido: "+ string.Join(" ", request.Nombre, request.ApellidoPaterno)+ " a nuestro SISTEMA WEB." ,
                     accion = accion,
                     ListaArchivosB64 = new List<ArchivoBase64>()
                 };
@@ -242,7 +242,7 @@ namespace Negocio.Trax
 
                                    }).ToList();
                 respuesta.Respuesta.result = 200;
-                respuesta.Respuesta.mensaje = "";
+                respuesta.Respuesta.mensaje = "Se obtuvieron los datos con exito";
 
             }
             catch (Exception ex)
