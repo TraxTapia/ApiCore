@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "cR9oldLDlibnae1GzkPj1aclGr5IeZoLazCMs7QqzJ4yINmYbHGd6UCMcWAHVi6msbAWbwc+crzasDcAveqdIg==",
+  "dgSpecHash": "CAffn3cw91XVPVvyz7/tYNIySQpylN2U6EvJbyxRv2udgRmdoNsEu7bo6qmqVWxjBxnwljuBc4rZ5E8VBVVcvw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ivan.tapia\\source\\repos\\ApiTrax\\ServiciosGenericos\\ServiciosGenericos.csproj",
+  "projectFilePath": "C:\\Users\\ivan.tapia\\source\\Ivan\\ApiTrax\\ServiciosGenericos\\ServiciosGenericos.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

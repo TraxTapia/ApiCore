@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ivan.tapia\\source\\repos\\ApiTrax\\ApiTrax\\ApiTrax.csproj": {}
+    "C:\\Users\\ivan.tapia\\source\\Ivan\\ApiTrax\\ApiTrax\\ApiTrax.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ivan.tapia\\source\\repos\\ApiTrax\\ApiTrax\\ApiTrax.csproj": {
+    "C:\\Users\\ivan.tapia\\source\\Ivan\\ApiTrax\\ApiTrax\\ApiTrax.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ivan.tapia\\source\\repos\\ApiTrax\\ApiTrax\\ApiTrax.csproj",
+        "projectUniqueName": "C:\\Users\\ivan.tapia\\source\\Ivan\\ApiTrax\\ApiTrax\\ApiTrax.csproj",
         "projectName": "ApiTrax",
-        "projectPath": "C:\\Users\\ivan.tapia\\source\\repos\\ApiTrax\\ApiTrax\\ApiTrax.csproj",
+        "projectPath": "C:\\Users\\ivan.tapia\\source\\Ivan\\ApiTrax\\ApiTrax\\ApiTrax.csproj",
         "packagesPath": "C:\\Users\\ivan.tapia\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ivan.tapia\\source\\repos\\ApiTrax\\ApiTrax\\obj\\",
+        "outputPath": "C:\\Users\\ivan.tapia\\source\\Ivan\\ApiTrax\\ApiTrax\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -35,26 +35,26 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\ivan.tapia\\source\\repos\\ApiTrax\\Core.Contratos.Trax\\Core.Contratos.Trax.csproj": {
-                "projectPath": "C:\\Users\\ivan.tapia\\source\\repos\\ApiTrax\\Core.Contratos.Trax\\Core.Contratos.Trax.csproj"
+              "C:\\Users\\ivan.tapia\\source\\Ivan\\ApiTrax\\Core.Contratos.Trax\\Core.Contratos.Trax.csproj": {
+                "projectPath": "C:\\Users\\ivan.tapia\\source\\Ivan\\ApiTrax\\Core.Contratos.Trax\\Core.Contratos.Trax.csproj"
               },
-              "C:\\Users\\ivan.tapia\\source\\repos\\ApiTrax\\Core.Implement.Trax\\Core.Implement.Trax.csproj": {
-                "projectPath": "C:\\Users\\ivan.tapia\\source\\repos\\ApiTrax\\Core.Implement.Trax\\Core.Implement.Trax.csproj"
+              "C:\\Users\\ivan.tapia\\source\\Ivan\\ApiTrax\\Core.Implement.Trax\\Core.Implement.Trax.csproj": {
+                "projectPath": "C:\\Users\\ivan.tapia\\source\\Ivan\\ApiTrax\\Core.Implement.Trax\\Core.Implement.Trax.csproj"
               },
-              "C:\\Users\\ivan.tapia\\source\\repos\\ApiTrax\\Data.DAO.EF\\Data.DAO.EF.csproj": {
-                "projectPath": "C:\\Users\\ivan.tapia\\source\\repos\\ApiTrax\\Data.DAO.EF\\Data.DAO.EF.csproj"
+              "C:\\Users\\ivan.tapia\\source\\Ivan\\ApiTrax\\Data.DAO.EF\\Data.DAO.EF.csproj": {
+                "projectPath": "C:\\Users\\ivan.tapia\\source\\Ivan\\ApiTrax\\Data.DAO.EF\\Data.DAO.EF.csproj"
               },
-              "C:\\Users\\ivan.tapia\\source\\repos\\ApiTrax\\Models\\Models.csproj": {
-                "projectPath": "C:\\Users\\ivan.tapia\\source\\repos\\ApiTrax\\Models\\Models.csproj"
+              "C:\\Users\\ivan.tapia\\source\\Ivan\\ApiTrax\\Models\\Models.csproj": {
+                "projectPath": "C:\\Users\\ivan.tapia\\source\\Ivan\\ApiTrax\\Models\\Models.csproj"
               },
-              "C:\\Users\\ivan.tapia\\source\\repos\\ApiTrax\\Negocio.Trax\\Negocio.Trax.csproj": {
-                "projectPath": "C:\\Users\\ivan.tapia\\source\\repos\\ApiTrax\\Negocio.Trax\\Negocio.Trax.csproj"
+              "C:\\Users\\ivan.tapia\\source\\Ivan\\ApiTrax\\Negocio.Trax\\Negocio.Trax.csproj": {
+                "projectPath": "C:\\Users\\ivan.tapia\\source\\Ivan\\ApiTrax\\Negocio.Trax\\Negocio.Trax.csproj"
               },
-              "C:\\Users\\ivan.tapia\\source\\repos\\ApiTrax\\ServiciosGenericos\\ServiciosGenericos.csproj": {
-                "projectPath": "C:\\Users\\ivan.tapia\\source\\repos\\ApiTrax\\ServiciosGenericos\\ServiciosGenericos.csproj"
+              "C:\\Users\\ivan.tapia\\source\\Ivan\\ApiTrax\\ServiciosGenericos\\ServiciosGenericos.csproj": {
+                "projectPath": "C:\\Users\\ivan.tapia\\source\\Ivan\\ApiTrax\\ServiciosGenericos\\ServiciosGenericos.csproj"
               },
-              "C:\\Users\\ivan.tapia\\source\\repos\\ApiTrax\\Utilidades\\Utilidades.csproj": {
-                "projectPath": "C:\\Users\\ivan.tapia\\source\\repos\\ApiTrax\\Utilidades\\Utilidades.csproj"
+              "C:\\Users\\ivan.tapia\\source\\Ivan\\ApiTrax\\Utilidades\\Utilidades.csproj": {
+                "projectPath": "C:\\Users\\ivan.tapia\\source\\Ivan\\ApiTrax\\Utilidades\\Utilidades.csproj"
               }
             }
           }
@@ -146,18 +146,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.105\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\ivan.tapia\\source\\repos\\ApiTrax\\Core.Contratos.Trax\\Core.Contratos.Trax.csproj": {
+    "C:\\Users\\ivan.tapia\\source\\Ivan\\ApiTrax\\Core.Contratos.Trax\\Core.Contratos.Trax.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ivan.tapia\\source\\repos\\ApiTrax\\Core.Contratos.Trax\\Core.Contratos.Trax.csproj",
+        "projectUniqueName": "C:\\Users\\ivan.tapia\\source\\Ivan\\ApiTrax\\Core.Contratos.Trax\\Core.Contratos.Trax.csproj",
         "projectName": "Core.Contratos.Trax",
-        "projectPath": "C:\\Users\\ivan.tapia\\source\\repos\\ApiTrax\\Core.Contratos.Trax\\Core.Contratos.Trax.csproj",
+        "projectPath": "C:\\Users\\ivan.tapia\\source\\Ivan\\ApiTrax\\Core.Contratos.Trax\\Core.Contratos.Trax.csproj",
         "packagesPath": "C:\\Users\\ivan.tapia\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ivan.tapia\\source\\repos\\ApiTrax\\Core.Contratos.Trax\\obj\\",
+        "outputPath": "C:\\Users\\ivan.tapia\\source\\Ivan\\ApiTrax\\Core.Contratos.Trax\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -181,11 +181,11 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\ivan.tapia\\source\\repos\\ApiTrax\\Models\\Models.csproj": {
-                "projectPath": "C:\\Users\\ivan.tapia\\source\\repos\\ApiTrax\\Models\\Models.csproj"
+              "C:\\Users\\ivan.tapia\\source\\Ivan\\ApiTrax\\Models\\Models.csproj": {
+                "projectPath": "C:\\Users\\ivan.tapia\\source\\Ivan\\ApiTrax\\Models\\Models.csproj"
               },
-              "C:\\Users\\ivan.tapia\\source\\repos\\ApiTrax\\ServiciosGenericos\\ServiciosGenericos.csproj": {
-                "projectPath": "C:\\Users\\ivan.tapia\\source\\repos\\ApiTrax\\ServiciosGenericos\\ServiciosGenericos.csproj"
+              "C:\\Users\\ivan.tapia\\source\\Ivan\\ApiTrax\\ServiciosGenericos\\ServiciosGenericos.csproj": {
+                "projectPath": "C:\\Users\\ivan.tapia\\source\\Ivan\\ApiTrax\\ServiciosGenericos\\ServiciosGenericos.csproj"
               }
             }
           }
@@ -214,18 +214,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.105\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\ivan.tapia\\source\\repos\\ApiTrax\\Core.Implement.Trax\\Core.Implement.Trax.csproj": {
+    "C:\\Users\\ivan.tapia\\source\\Ivan\\ApiTrax\\Core.Implement.Trax\\Core.Implement.Trax.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ivan.tapia\\source\\repos\\ApiTrax\\Core.Implement.Trax\\Core.Implement.Trax.csproj",
+        "projectUniqueName": "C:\\Users\\ivan.tapia\\source\\Ivan\\ApiTrax\\Core.Implement.Trax\\Core.Implement.Trax.csproj",
         "projectName": "Core.Implement.Trax",
-        "projectPath": "C:\\Users\\ivan.tapia\\source\\repos\\ApiTrax\\Core.Implement.Trax\\Core.Implement.Trax.csproj",
+        "projectPath": "C:\\Users\\ivan.tapia\\source\\Ivan\\ApiTrax\\Core.Implement.Trax\\Core.Implement.Trax.csproj",
         "packagesPath": "C:\\Users\\ivan.tapia\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ivan.tapia\\source\\repos\\ApiTrax\\Core.Implement.Trax\\obj\\",
+        "outputPath": "C:\\Users\\ivan.tapia\\source\\Ivan\\ApiTrax\\Core.Implement.Trax\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -249,11 +249,11 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\ivan.tapia\\source\\repos\\ApiTrax\\Core.Contratos.Trax\\Core.Contratos.Trax.csproj": {
-                "projectPath": "C:\\Users\\ivan.tapia\\source\\repos\\ApiTrax\\Core.Contratos.Trax\\Core.Contratos.Trax.csproj"
+              "C:\\Users\\ivan.tapia\\source\\Ivan\\ApiTrax\\Core.Contratos.Trax\\Core.Contratos.Trax.csproj": {
+                "projectPath": "C:\\Users\\ivan.tapia\\source\\Ivan\\ApiTrax\\Core.Contratos.Trax\\Core.Contratos.Trax.csproj"
               },
-              "C:\\Users\\ivan.tapia\\source\\repos\\ApiTrax\\Negocio.Trax\\Negocio.Trax.csproj": {
-                "projectPath": "C:\\Users\\ivan.tapia\\source\\repos\\ApiTrax\\Negocio.Trax\\Negocio.Trax.csproj"
+              "C:\\Users\\ivan.tapia\\source\\Ivan\\ApiTrax\\Negocio.Trax\\Negocio.Trax.csproj": {
+                "projectPath": "C:\\Users\\ivan.tapia\\source\\Ivan\\ApiTrax\\Negocio.Trax\\Negocio.Trax.csproj"
               }
             }
           }
@@ -282,15 +282,15 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.105\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\ivan.tapia\\source\\repos\\ApiTrax\\Data.DAO.EF\\Data.DAO.EF.csproj": {
+    "C:\\Users\\ivan.tapia\\source\\Ivan\\ApiTrax\\Data.DAO.EF\\Data.DAO.EF.csproj": {
       "restore": {
-        "projectUniqueName": "C:\\Users\\ivan.tapia\\source\\repos\\ApiTrax\\Data.DAO.EF\\Data.DAO.EF.csproj",
+        "projectUniqueName": "C:\\Users\\ivan.tapia\\source\\Ivan\\ApiTrax\\Data.DAO.EF\\Data.DAO.EF.csproj",
         "projectName": "Data.DAO.EF",
-        "projectPath": "C:\\Users\\ivan.tapia\\source\\repos\\ApiTrax\\Data.DAO.EF\\Data.DAO.EF.csproj",
+        "projectPath": "C:\\Users\\ivan.tapia\\source\\Ivan\\ApiTrax\\Data.DAO.EF\\Data.DAO.EF.csproj",
         "frameworks": {
           "net472": {
             "projectReferences": {}
@@ -301,14 +301,14 @@
         "net472": {}
       }
     },
-    "C:\\Users\\ivan.tapia\\source\\repos\\ApiTrax\\Models\\Models.csproj": {
+    "C:\\Users\\ivan.tapia\\source\\Ivan\\ApiTrax\\Models\\Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ivan.tapia\\source\\repos\\ApiTrax\\Models\\Models.csproj",
+        "projectUniqueName": "C:\\Users\\ivan.tapia\\source\\Ivan\\ApiTrax\\Models\\Models.csproj",
         "projectName": "Models",
-        "projectPath": "C:\\Users\\ivan.tapia\\source\\repos\\ApiTrax\\Models\\Models.csproj",
+        "projectPath": "C:\\Users\\ivan.tapia\\source\\Ivan\\ApiTrax\\Models\\Models.csproj",
         "packagesPath": "C:\\Users\\ivan.tapia\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ivan.tapia\\source\\repos\\ApiTrax\\Models\\obj\\",
+        "outputPath": "C:\\Users\\ivan.tapia\\source\\Ivan\\ApiTrax\\Models\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -332,14 +332,14 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\ivan.tapia\\source\\repos\\ApiTrax\\Data.DAO.EF\\Data.DAO.EF.csproj": {
-                "projectPath": "C:\\Users\\ivan.tapia\\source\\repos\\ApiTrax\\Data.DAO.EF\\Data.DAO.EF.csproj"
+              "C:\\Users\\ivan.tapia\\source\\Ivan\\ApiTrax\\Data.DAO.EF\\Data.DAO.EF.csproj": {
+                "projectPath": "C:\\Users\\ivan.tapia\\source\\Ivan\\ApiTrax\\Data.DAO.EF\\Data.DAO.EF.csproj"
               },
-              "C:\\Users\\ivan.tapia\\source\\repos\\ApiTrax\\ServiciosGenericos\\ServiciosGenericos.csproj": {
-                "projectPath": "C:\\Users\\ivan.tapia\\source\\repos\\ApiTrax\\ServiciosGenericos\\ServiciosGenericos.csproj"
+              "C:\\Users\\ivan.tapia\\source\\Ivan\\ApiTrax\\ServiciosGenericos\\ServiciosGenericos.csproj": {
+                "projectPath": "C:\\Users\\ivan.tapia\\source\\Ivan\\ApiTrax\\ServiciosGenericos\\ServiciosGenericos.csproj"
               },
-              "C:\\Users\\ivan.tapia\\source\\repos\\ApiTrax\\Utilidades\\Utilidades.csproj": {
-                "projectPath": "C:\\Users\\ivan.tapia\\source\\repos\\ApiTrax\\Utilidades\\Utilidades.csproj"
+              "C:\\Users\\ivan.tapia\\source\\Ivan\\ApiTrax\\Utilidades\\Utilidades.csproj": {
+                "projectPath": "C:\\Users\\ivan.tapia\\source\\Ivan\\ApiTrax\\Utilidades\\Utilidades.csproj"
               }
             }
           }
@@ -388,18 +388,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.105\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\ivan.tapia\\source\\repos\\ApiTrax\\Negocio.Trax\\Negocio.Trax.csproj": {
+    "C:\\Users\\ivan.tapia\\source\\Ivan\\ApiTrax\\Negocio.Trax\\Negocio.Trax.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ivan.tapia\\source\\repos\\ApiTrax\\Negocio.Trax\\Negocio.Trax.csproj",
+        "projectUniqueName": "C:\\Users\\ivan.tapia\\source\\Ivan\\ApiTrax\\Negocio.Trax\\Negocio.Trax.csproj",
         "projectName": "Negocio.Trax",
-        "projectPath": "C:\\Users\\ivan.tapia\\source\\repos\\ApiTrax\\Negocio.Trax\\Negocio.Trax.csproj",
+        "projectPath": "C:\\Users\\ivan.tapia\\source\\Ivan\\ApiTrax\\Negocio.Trax\\Negocio.Trax.csproj",
         "packagesPath": "C:\\Users\\ivan.tapia\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ivan.tapia\\source\\repos\\ApiTrax\\Negocio.Trax\\obj\\",
+        "outputPath": "C:\\Users\\ivan.tapia\\source\\Ivan\\ApiTrax\\Negocio.Trax\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -423,14 +423,14 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\ivan.tapia\\source\\repos\\ApiTrax\\Data.DAO.EF\\Data.DAO.EF.csproj": {
-                "projectPath": "C:\\Users\\ivan.tapia\\source\\repos\\ApiTrax\\Data.DAO.EF\\Data.DAO.EF.csproj"
+              "C:\\Users\\ivan.tapia\\source\\Ivan\\ApiTrax\\Data.DAO.EF\\Data.DAO.EF.csproj": {
+                "projectPath": "C:\\Users\\ivan.tapia\\source\\Ivan\\ApiTrax\\Data.DAO.EF\\Data.DAO.EF.csproj"
               },
-              "C:\\Users\\ivan.tapia\\source\\repos\\ApiTrax\\Models\\Models.csproj": {
-                "projectPath": "C:\\Users\\ivan.tapia\\source\\repos\\ApiTrax\\Models\\Models.csproj"
+              "C:\\Users\\ivan.tapia\\source\\Ivan\\ApiTrax\\Models\\Models.csproj": {
+                "projectPath": "C:\\Users\\ivan.tapia\\source\\Ivan\\ApiTrax\\Models\\Models.csproj"
               },
-              "C:\\Users\\ivan.tapia\\source\\repos\\ApiTrax\\ServiciosGenericos\\ServiciosGenericos.csproj": {
-                "projectPath": "C:\\Users\\ivan.tapia\\source\\repos\\ApiTrax\\ServiciosGenericos\\ServiciosGenericos.csproj"
+              "C:\\Users\\ivan.tapia\\source\\Ivan\\ApiTrax\\ServiciosGenericos\\ServiciosGenericos.csproj": {
+                "projectPath": "C:\\Users\\ivan.tapia\\source\\Ivan\\ApiTrax\\ServiciosGenericos\\ServiciosGenericos.csproj"
               }
             }
           }
@@ -465,18 +465,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.105\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\ivan.tapia\\source\\repos\\ApiTrax\\ServiciosGenericos\\ServiciosGenericos.csproj": {
+    "C:\\Users\\ivan.tapia\\source\\Ivan\\ApiTrax\\ServiciosGenericos\\ServiciosGenericos.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ivan.tapia\\source\\repos\\ApiTrax\\ServiciosGenericos\\ServiciosGenericos.csproj",
+        "projectUniqueName": "C:\\Users\\ivan.tapia\\source\\Ivan\\ApiTrax\\ServiciosGenericos\\ServiciosGenericos.csproj",
         "projectName": "ServiciosGenericos",
-        "projectPath": "C:\\Users\\ivan.tapia\\source\\repos\\ApiTrax\\ServiciosGenericos\\ServiciosGenericos.csproj",
+        "projectPath": "C:\\Users\\ivan.tapia\\source\\Ivan\\ApiTrax\\ServiciosGenericos\\ServiciosGenericos.csproj",
         "packagesPath": "C:\\Users\\ivan.tapia\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ivan.tapia\\source\\repos\\ApiTrax\\ServiciosGenericos\\obj\\",
+        "outputPath": "C:\\Users\\ivan.tapia\\source\\Ivan\\ApiTrax\\ServiciosGenericos\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -526,15 +526,15 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.105\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\ivan.tapia\\source\\repos\\ApiTrax\\Utilidades\\Utilidades.csproj": {
+    "C:\\Users\\ivan.tapia\\source\\Ivan\\ApiTrax\\Utilidades\\Utilidades.csproj": {
       "restore": {
-        "projectUniqueName": "C:\\Users\\ivan.tapia\\source\\repos\\ApiTrax\\Utilidades\\Utilidades.csproj",
+        "projectUniqueName": "C:\\Users\\ivan.tapia\\source\\Ivan\\ApiTrax\\Utilidades\\Utilidades.csproj",
         "projectName": "Utilidades",
-        "projectPath": "C:\\Users\\ivan.tapia\\source\\repos\\ApiTrax\\Utilidades\\Utilidades.csproj",
+        "projectPath": "C:\\Users\\ivan.tapia\\source\\Ivan\\ApiTrax\\Utilidades\\Utilidades.csproj",
         "frameworks": {
           "net472": {
             "projectReferences": {}

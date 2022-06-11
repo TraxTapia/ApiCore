@@ -759,9 +759,6 @@
           "Microsoft.NETCore.Platforms": "1.1.0",
           "Microsoft.NETCore.Targets": "1.1.0",
           "System.Runtime": "4.3.0"
-        },
-        "compile": {
-          "ref/netstandard1.3/System.Globalization.dll": {}
         }
       },
       "System.Globalization.Extensions/4.3.0": {
@@ -5883,11 +5880,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ivan.tapia\\source\\repos\\ApiTrax\\Core.Implement.Trax\\Core.Implement.Trax.csproj",
+      "projectUniqueName": "C:\\Users\\ivan.tapia\\source\\Ivan\\ApiTrax\\Core.Implement.Trax\\Core.Implement.Trax.csproj",
       "projectName": "Core.Implement.Trax",
-      "projectPath": "C:\\Users\\ivan.tapia\\source\\repos\\ApiTrax\\Core.Implement.Trax\\Core.Implement.Trax.csproj",
+      "projectPath": "C:\\Users\\ivan.tapia\\source\\Ivan\\ApiTrax\\Core.Implement.Trax\\Core.Implement.Trax.csproj",
       "packagesPath": "C:\\Users\\ivan.tapia\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ivan.tapia\\source\\repos\\ApiTrax\\Core.Implement.Trax\\obj\\",
+      "outputPath": "C:\\Users\\ivan.tapia\\source\\Ivan\\ApiTrax\\Core.Implement.Trax\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -5911,11 +5908,11 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\ivan.tapia\\source\\repos\\ApiTrax\\Core.Contratos.Trax\\Core.Contratos.Trax.csproj": {
-              "projectPath": "C:\\Users\\ivan.tapia\\source\\repos\\ApiTrax\\Core.Contratos.Trax\\Core.Contratos.Trax.csproj"
+            "C:\\Users\\ivan.tapia\\source\\Ivan\\ApiTrax\\Core.Contratos.Trax\\Core.Contratos.Trax.csproj": {
+              "projectPath": "C:\\Users\\ivan.tapia\\source\\Ivan\\ApiTrax\\Core.Contratos.Trax\\Core.Contratos.Trax.csproj"
             },
-            "C:\\Users\\ivan.tapia\\source\\repos\\ApiTrax\\Negocio.Trax\\Negocio.Trax.csproj": {
-              "projectPath": "C:\\Users\\ivan.tapia\\source\\repos\\ApiTrax\\Negocio.Trax\\Negocio.Trax.csproj"
+            "C:\\Users\\ivan.tapia\\source\\Ivan\\ApiTrax\\Negocio.Trax\\Negocio.Trax.csproj": {
+              "projectPath": "C:\\Users\\ivan.tapia\\source\\Ivan\\ApiTrax\\Negocio.Trax\\Negocio.Trax.csproj"
             }
           }
         }
@@ -5944,8 +5941,19 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.105\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1202",
+      "level": "Error",
+      "message": "El paquete System.Globalization 4.3.0 no es compatible con netcoreapp3.1 (.NETCoreApp,Version=v3.1). El paquete System.Globalization 4.3.0 admite: xamarinwatchos10 (Xamarin.WatchOS,Version=v1.0)",
+      "libraryId": "System.Globalization",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v3.1"
+      ]
+    }
+  ]
 }
