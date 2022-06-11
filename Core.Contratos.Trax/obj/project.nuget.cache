@@ -1,7 +1,7 @@
 {
   "version": 2,
   "dgSpecHash": "gy2o8kHinf9/C8HK7QSs9W+c6jfYEID8fcohgnaubFOtpPrLqgxU00iQ8nR7NJ7Cc2PCXDXc2XeWA6Y/VH1vbA==",
-  "success": false,
+  "success": true,
   "projectFilePath": "C:\\Users\\ivan.tapia\\source\\Ivan\\ApiTrax\\Core.Contratos.Trax\\Core.Contratos.Trax.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ivan.tapia\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\3.1.4\\microsoft.aspnetcore.cryptography.internal.3.1.4.nupkg.sha512",
@@ -108,15 +108,5 @@
     "C:\\Users\\ivan.tapia\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
     "C:\\Users\\ivan.tapia\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1202",
-      "level": "Error",
-      "message": "El paquete System.Globalization 4.3.0 no es compatible con netcoreapp3.1 (.NETCoreApp,Version=v3.1). El paquete System.Globalization 4.3.0 admite: xamarinwatchos10 (Xamarin.WatchOS,Version=v1.0)",
-      "libraryId": "System.Globalization",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.1"
-      ]
-    }
-  ]
+  "logs": []
 }
