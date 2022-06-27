@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "dgSpecHash": "u4xWZcYoVWBihZCWyeY/gftf6OR2aUAT+Z3Ork/o8f8CRmbsBdcHOWuyPAGIdwWUUjZERSbuLPpK0IEbbcxpew==",
-  "success": true,
+  "dgSpecHash": "sMH9h8yRI+IfF0PgZvtqz1t6eXQLJ3NmYYCpJHxk/L3Zf1Ft50XKTID3nYe3bUHOpUIhRw7HV1Pfi5hzUjfRcQ==",
+  "success": false,
   "projectFilePath": "C:\\Users\\ivan.tapia\\source\\Ivan\\ApiTrax\\Core.Implement.Trax\\Core.Implement.Trax.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ivan.tapia\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
@@ -109,5 +109,15 @@
     "C:\\Users\\ivan.tapia\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
     "C:\\Users\\ivan.tapia\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1202",
+      "level": "Error",
+      "message": "El paquete System.Globalization 4.3.0 no es compatible con netcoreapp3.1 (.NETCoreApp,Version=v3.1). El paquete System.Globalization 4.3.0 admite: xamarinwatchos10 (Xamarin.WatchOS,Version=v1.0)",
+      "libraryId": "System.Globalization",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v3.1"
+      ]
+    }
+  ]
 }
